@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 }
 
 type FeaturedAthlete = {
+  slug: string
   badge: string
   name: string
   sport: string
@@ -24,6 +25,7 @@ type FeaturedAthlete = {
 
 const featuredAthletes: FeaturedAthlete[] = [
   {
+    slug: 'hunter-mcintyre',
     badge: 'HYROX WORLD CHAMPION',
     name: 'HUNTER McINTYRE',
     sport: 'Two-Time HYROX World Champion',
@@ -34,6 +36,7 @@ const featuredAthletes: FeaturedAthlete[] = [
     image: '/Hunter-McIntyre-HYROX-World-Championships-Run-2.webp',
   },
   {
+    slug: 'david-zabriskie',
     badge: '6X USA TIME TRIAL CHAMPION',
     name: 'DAVID ZABRISKIE',
     sport: 'Professional Cyclist · 7x Tour de France',
@@ -44,6 +47,7 @@ const featuredAthletes: FeaturedAthlete[] = [
     image: '/David%20Z.webp',
   },
   {
+    slug: 'katherine-wood',
     badge: 'PRO MTB CYCLIST',
     name: 'KATHERINE WOOD',
     sport: 'UCI Pro Mountain Bike Racer',
@@ -206,7 +210,8 @@ export default function AthletesPage() {
               {featuredAthletes.map((athlete) => (
                 <div
                   key={athlete.name}
-                  className="grid grid-cols-1 md:grid-cols-2 min-h-[500px] bg-[#080808]"
+                  id={athlete.slug}
+                  className="scroll-mt-24 grid grid-cols-1 md:grid-cols-2 min-h-[500px] bg-[#080808]"
                 >
                   {/* Image area */}
                   <div

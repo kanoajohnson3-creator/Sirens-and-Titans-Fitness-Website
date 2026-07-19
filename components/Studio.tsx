@@ -5,11 +5,9 @@ import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 
 const amenities = [
-  '8,000 sq ft private facility',
   'Olympic lifting platforms',
   'Recovery & contrast therapy',
   'Turf performance zone',
-  'Nutrition & supplement bar',
   'Private changing suites',
   'Cardio performance lab',
   'Physiotherapy on-site',

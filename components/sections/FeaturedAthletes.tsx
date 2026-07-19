@@ -1,10 +1,12 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const athletes = [
   {
+    slug: 'hunter-mcintyre',
     badge: 'HYROX WORLD CHAMPION',
     name: 'HUNTER McINTYRE',
     sport: 'Two-Time HYROX World Champion',
@@ -13,6 +15,7 @@ const athletes = [
     image: '/Hunter-McIntyre-HYROX-World-Championships-Run-2.webp',
   },
   {
+    slug: 'david-zabriskie',
     badge: '6X USA TIME TRIAL CHAMPION',
     name: 'DAVID ZABRISKIE',
     sport: 'Professional Cyclist · 7x Tour de France',
@@ -21,6 +24,7 @@ const athletes = [
     image: '/David%20Z.webp',
   },
   {
+    slug: 'katherine-wood',
     badge: 'PRO MTB CYCLIST',
     name: 'KATHERINE WOOD',
     sport: 'UCI Pro Mountain Bike Racer',
@@ -100,7 +104,10 @@ export default function FeaturedAthletes() {
                 </p>
 
                 {/* Read Story link */}
-                <span className="text-[#4A7C26] text-base font-medium mt-4 inline-flex items-center gap-2 hover:gap-3 transition-all duration-200 group/link">
+                <Link
+                  href={`/athletes#${athlete.slug}`}
+                  className="mt-4 inline-flex items-center gap-2 text-base font-medium text-[#4A7C26] transition-all duration-200 hover:gap-3 group/link"
+                >
                   Read Story
                   <span
                     className="transition-transform duration-200 group-hover/link:translate-x-0.5"
@@ -108,7 +115,7 @@ export default function FeaturedAthletes() {
                   >
                     →
                   </span>
-                </span>
+                </Link>
               </div>
             </motion.div>
           ))}
