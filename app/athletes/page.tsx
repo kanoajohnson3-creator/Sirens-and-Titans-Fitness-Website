@@ -59,6 +59,7 @@ const featuredAthletes: FeaturedAthlete[] = [
     gallery: ['/Katherine1.webp', '/Katherine2.webp', '/Katherine4.webp'],
   },
   {
+    slug: 'jason-d',
     badge: 'TENNIS',
     name: 'JASON D.',
     sport: 'Competitive Tennis · Rafa Nadal Academy',
@@ -69,6 +70,7 @@ const featuredAthletes: FeaturedAthlete[] = [
     image: '/JasonRafa.webp',
   },
   {
+    slug: 'luca-russo',
     badge: 'PRO SOCCER · ITALY',
     name: 'LUCA RUSSO',
     sport: 'Professional Soccer Player · Italy',
