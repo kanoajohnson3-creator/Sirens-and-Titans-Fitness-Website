@@ -8,12 +8,12 @@ import SectionLabel from '@/components/ui/SectionLabel'
 export const metadata: Metadata = {
   title: 'Elite Group Training | Sirens & Titans Fitness',
   description:
-    'High end personal training in a group setting. Individual programs, maximum 7 athletes, coached every rep. West Los Angeles.',
+    'High end personal training in a group setting. Individual programs, 7 clients per coach, coached every rep. West Los Angeles.',
 }
 
 const features = [
-  'Maximum 7 athletes per session',
-  'Individual program for every athlete',
+  '7 clients per coach',
+  'Individual program for every individual',
   'Coached and corrected every rep',
   'Programs updated and progressed continuously',
   'Sport specific training available',
@@ -24,17 +24,17 @@ const steps = [
   {
     number: '01',
     title: 'EVALUATION',
-    body: 'Every new athlete begins with a full movement and fitness evaluation before their first group session.',
+    body: 'Every new individual begins with a full movement and fitness evaluation before their first group session.',
   },
   {
     number: '02',
     title: 'PROGRAM DESIGN',
-    body: 'Your individual program is built based on your evaluation results, goals, and sport demands.',
+    body: 'Your individual program is built based on your evaluation results, goals, and sport demands — whether you are an athlete or not.',
   },
   {
     number: '03',
     title: 'COACHED TRAINING',
-    body: 'Train in a group of 7 or fewer athletes, each on their own program, coached the entire session.',
+    body: 'Train in a group of 7 or fewer individuals, each on their own program, coached the entire session.',
   },
 ]
 
@@ -65,9 +65,9 @@ export default function TrainingProgramsPage() {
             >
               HIGH END PERSONAL TRAINING IN A GROUP
             </h2>
-            <p className="font-body text-sm text-[#888888] mt-4 max-w-2xl mx-auto leading-relaxed tracking-wide">
-              All the precision of one on one coaching at a fraction of the cost. Maximum 7 athletes
-              per session.
+            <p className="font-body text-base text-white mt-4 max-w-2xl mx-auto leading-relaxed tracking-wide">
+              All the precision of one on one coaching at a fraction of the cost. 7 clients per
+              coach.
             </p>
           </div>
         </div>
@@ -85,16 +85,16 @@ export default function TrainingProgramsPage() {
                 >
                   INDIVIDUAL PROGRAMS. GROUP ENERGY.
                 </h2>
-                <div className="space-y-4 font-body text-sm text-[#888888] leading-relaxed tracking-wide">
+                <div className="space-y-4 font-body text-base text-white leading-relaxed tracking-wide">
                   <p>
-                    Elite Group Training at Sirens and Titans is not a group class. Every athlete in
+                    Elite Group Training at Sirens and Titans is not a group class. Every individual in
                     the session trains on their own individually designed program, built specifically
                     for their goals, their sport, and their body. You train alongside others but
                     never do the same workout as the person next to you.
                   </p>
                   <p>
-                    Sessions are capped at 7 athletes maximum. This keeps the coaching quality high
-                    and ensures every athlete receives real attention, real corrections, and real
+                    7 clients per coach. This keeps the coaching quality high
+                    and ensures every individual receives real attention, real corrections, and real
                     results every single session.
                   </p>
                   <p>
@@ -109,14 +109,14 @@ export default function TrainingProgramsPage() {
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-3">
                       <span className="text-[#4A7C26] font-bold mt-0.5 flex-shrink-0">✓</span>
-                      <span className="font-body text-sm text-white">{f}</span>
+                      <span className="font-body text-base text-white">{f}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Link
                   href="/contact"
-                  className="inline-block mt-10 font-body text-xs font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-8 py-3 transition-colors duration-200"
+                  className="inline-block mt-10 font-body text-sm font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-8 py-3 transition-colors duration-200"
                   style={{ letterSpacing: '0.15em' }}
                 >
                   Book Your Evaluation →
@@ -157,7 +157,7 @@ export default function TrainingProgramsPage() {
                   >
                     {step.title}
                   </h3>
-                  <p className="font-body text-sm text-[#888888] leading-relaxed tracking-wide mt-3">
+                  <p className="font-body text-base text-white leading-relaxed tracking-wide mt-3">
                     {step.body}
                   </p>
                 </div>
@@ -175,19 +175,19 @@ export default function TrainingProgramsPage() {
             >
               READY TO START?
             </h2>
-            <p className="font-body text-sm text-[#888888] mt-4">
+            <p className="font-body text-base text-white mt-4">
               Every client begins with a full evaluation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-8">
               <Link
                 href="/contact"
-                className="font-body text-xs font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
+                className="font-body text-sm font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
                 style={{ letterSpacing: '0.15em' }}
               >
                 Book Your Evaluation →
               </Link>
               <div className="flex flex-col items-center gap-1">
-                <span className="font-body text-xs text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
+                <span className="font-body text-sm text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
                   Or call us directly
                 </span>
                 <a

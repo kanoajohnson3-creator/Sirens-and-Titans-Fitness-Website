@@ -42,7 +42,7 @@ export default function ContactPage() {
             >
               BOOK YOUR EVALUATION
             </h1>
-            <p className="font-body text-sm text-[#888888] mt-3 tracking-wide">
+            <p className="font-body text-base text-white mt-3 tracking-wide">
               Every new client begins with a full evaluation. No exceptions.
             </p>
           </div>
@@ -55,14 +55,14 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="w-full">
                 <SectionLabel>Start Your Journey</SectionLabel>
-                <p className="font-body text-sm text-[#888888] mt-2 mb-8 leading-relaxed tracking-wide">
+                <p className="font-body text-base text-white mt-2 mb-8 leading-relaxed tracking-wide">
                   Fill out the form below and we will be in touch within 24 hours to schedule your
                   evaluation.
                 </p>
                 <WellnessLivingLeadCapture />
               </div>
 
-              <p className="font-body text-xs text-[#888888] mt-4">
+              <p className="font-body text-sm text-white mt-4">
                 Prefer to sign up directly?{' '}
                 <a
                   href="https://www.wellnessliving.com/rs/lead-add.html?k_business=355996&k_skin=363811"
@@ -106,9 +106,9 @@ export default function ContactPage() {
                     >
                       Location
                     </p>
-                    <p className="font-body text-sm text-white">2242 S Sepulveda Blvd</p>
-                    <p className="font-body text-sm text-[#888888]">Los Angeles, CA 90064</p>
-                    <p className="font-body text-xs text-[#888888]/60 mt-0.5">By appointment only</p>
+                    <p className="font-body text-base text-white">2242 S Sepulveda Blvd</p>
+                    <p className="font-body text-base text-white">Los Angeles, CA 90064</p>
+                    <p className="font-body text-sm text-[#888888]/60 mt-0.5">By appointment only</p>
                   </div>
 
                   {/* Hours */}
@@ -127,8 +127,8 @@ export default function ContactPage() {
                         { days: 'Sunday', time: 'Closed' },
                       ].map((h) => (
                         <div key={h.days} className="flex items-center justify-between gap-2">
-                          <span className="font-body text-sm font-medium text-white">{h.days}</span>
-                          <span className="font-body text-sm text-[#888888]">{h.time}</span>
+                          <span className="font-body text-base font-medium text-white">{h.days}</span>
+                          <span className="font-body text-base text-[#888888]">{h.time}</span>
                         </div>
                       ))}
                     </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                   {expectations.map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-[#4A7C26] flex-shrink-0 mt-2" />
-                      <span className="font-body text-sm text-[#888888]">{item}</span>
+                      <span className="font-body text-base text-white">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                   href={WELLNESS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center font-body text-xs font-medium uppercase border border-[#1E1E1E] hover:border-[#4A7C26] text-[#888888] hover:text-white py-3 transition-colors duration-200"
+                  className="block w-full text-center font-body text-sm font-medium uppercase border border-[#1E1E1E] hover:border-[#4A7C26] text-[#888888] hover:text-white py-3 transition-colors duration-200"
                   style={{ letterSpacing: '0.15em' }}
                 >
                   Sign In to WellnessLiving →

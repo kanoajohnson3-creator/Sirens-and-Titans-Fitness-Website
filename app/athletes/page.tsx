@@ -169,7 +169,7 @@ export default function AthletesPage() {
             >
               ATHLETES WE HAVE BUILT
             </h1>
-            <p className="font-body text-sm text-[#888888] mt-3 tracking-wide">
+            <p className="font-body text-base text-white mt-3 tracking-wide">
               There is always a next level.
             </p>
           </div>
@@ -224,7 +224,7 @@ export default function AthletesPage() {
                     {/* Badge */}
                     <div className="absolute top-6 left-6">
                       <span
-                        className="rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-xs px-3 py-1 font-medium font-body backdrop-blur-sm"
+                        className="rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-sm px-3 py-1 font-medium font-body backdrop-blur-sm"
                         style={{ letterSpacing: '0.1em' }}
                       >
                         {athlete.badge}
@@ -248,11 +248,11 @@ export default function AthletesPage() {
                     >
                       {athlete.sport}
                     </p>
-                    <p className="font-body text-sm text-[#888888] leading-relaxed tracking-wide">
+                    <p className="font-body text-base text-white leading-relaxed tracking-wide">
                       {athlete.story}
                     </p>
                     {athlete.attribution && (
-                      <p className="font-body text-xs text-[#4A7C26]/70 italic mt-6">
+                      <p className="font-body text-sm text-[#4A7C26]/70 italic mt-6">
                         — {athlete.attribution}
                       </p>
                     )}
@@ -297,8 +297,8 @@ export default function AthletesPage() {
                       key={a.name}
                       className="flex items-start justify-between gap-4 border-b border-[#1E1E1E] py-3"
                     >
-                      <span className="font-body font-medium text-sm text-white">{a.name}</span>
-                      <span className="font-body text-xs text-[#888888] text-right flex-shrink-0 max-w-[55%]">
+                      <span className="font-body font-medium text-base text-white">{a.name}</span>
+                      <span className="font-body text-sm text-[#888888] text-right flex-shrink-0 max-w-[55%]">
                         {a.credential}
                       </span>
                     </li>
@@ -315,8 +315,8 @@ export default function AthletesPage() {
                       key={t.name}
                       className="flex items-start justify-between gap-4 border-b border-[#1E1E1E] py-3"
                     >
-                      <span className="font-body font-medium text-sm text-white">{t.name}</span>
-                      <span className="font-body text-xs text-[#888888] text-right flex-shrink-0 max-w-[45%]">
+                      <span className="font-body font-medium text-base text-white">{t.name}</span>
+                      <span className="font-body text-sm text-[#888888] text-right flex-shrink-0 max-w-[45%]">
                         {t.credential}
                       </span>
                     </li>
@@ -342,7 +342,7 @@ export default function AthletesPage() {
               {capabilities.map((cap) => (
                 <span
                   key={cap}
-                  className="font-body text-sm text-[#888888] border border-[#4A7C26] px-4 py-2 rounded-full hover:text-[#4A7C26] transition-colors duration-200"
+                  className="font-body text-base text-[#888888] border border-[#4A7C26] px-4 py-2 rounded-full hover:text-[#4A7C26] transition-colors duration-200"
                 >
                   {cap}
                 </span>
@@ -352,13 +352,13 @@ export default function AthletesPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-10">
               <Link
                 href="/contact"
-                className="font-body text-xs font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
+                className="font-body text-sm font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
                 style={{ letterSpacing: '0.15em' }}
               >
                 Start Your Evaluation →
               </Link>
               <div className="flex flex-col items-center gap-1">
-                <span className="font-body text-xs text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
+                <span className="font-body text-sm text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
                   Or call us directly
                 </span>
                 <a
@@ -370,7 +370,7 @@ export default function AthletesPage() {
               </div>
             </div>
 
-            <p className="font-body text-sm text-[#888888] italic text-center mt-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-body text-base text-white italic text-center mt-8 max-w-2xl mx-auto leading-relaxed">
               Jacques DeVore helped develop training programs utilizing isokinetic equipment with
               Jim Cotta, Former Strength and Conditioning Coach for the Los Angeles Lakers.
             </p>

@@ -25,7 +25,7 @@ export default function PressBar() {
       {/* Left label — sits outside the overflow container so it is never clipped */}
       <div className="flex-shrink-0 flex items-center gap-5 pl-8 md:pl-12 pr-6 z-20">
         <span
-          className="font-body text-xs uppercase tracking-widest text-[#4A7C26] whitespace-nowrap"
+          className="font-body text-sm uppercase tracking-widest text-[#4A7C26] whitespace-nowrap"
           style={{ letterSpacing: '0.2em' }}
         >
           As Featured In
@@ -49,7 +49,7 @@ export default function PressBar() {
           {doubled.map((pub, i) => (
             <span key={i} className="flex items-center">
               <span
-                className="font-body font-medium text-sm text-[#888888] hover:text-[#4A7C26] transition-colors duration-200 uppercase whitespace-nowrap px-7 cursor-default"
+                className="font-body font-medium text-base text-[#888888] hover:text-[#4A7C26] transition-colors duration-200 uppercase whitespace-nowrap px-7 cursor-default"
                 style={{ letterSpacing: '0.15em' }}
               >
                 {pub}

@@ -13,15 +13,15 @@ const stats = [
     isText: false,
   },
   {
-    display: '100+',
-    numeric: 100,
+    display: '1000+',
+    numeric: 1000,
     prefix: '',
     suffix: '+',
-    label: 'Athletes Trained',
+    label: 'Individuals Trained',
     isText: false,
   },
   {
-    display: 'D1 · PRO\nOLYMPIC',
+    display: 'PRO · OLYMPIC\nD1',
     numeric: null,
     prefix: '',
     suffix: '',
@@ -126,7 +126,7 @@ export default function StatsBar() {
             >
               <CountUp stat={stat} isInView={isInView} />
               <p
-                className="font-body text-xs text-[#888888] uppercase mt-3 leading-snug"
+                className="font-body text-sm text-[#888888] uppercase mt-3 leading-snug"
                 style={{ letterSpacing: '0.15em' }}
               >
                 {stat.label}

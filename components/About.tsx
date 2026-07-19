@@ -79,7 +79,7 @@ export default function About() {
             >
               JACQUES DeVORE
             </h3>
-            <p className="font-body text-sm font-light text-text-secondary leading-relaxed tracking-wide">
+            <p className="font-body text-base font-light text-text-secondary leading-relaxed tracking-wide">
               20+ years as a Certified Strength and Conditioning Specialist. Jacques founded Titan Sports
               Performance in Santa Barbara before opening Sirens and Titans in Los Angeles. He coauthored{' '}
               <em>Maximum Overload for Cyclists</em> published by Rodale Press, holds the unofficial
@@ -122,7 +122,7 @@ export default function About() {
               <p className="font-body text-[10px] font-medium tracking-[0.25em] text-text-secondary/40 uppercase mb-2">
                 Co-Author
               </p>
-              <p className="font-body text-sm font-light text-text-secondary/70 italic tracking-wide">
+              <p className="font-body text-base font-light text-text-secondary/70 italic tracking-wide">
                 Maximum Overload for Cyclists
               </p>
               <p className="font-body text-[10px] font-light text-text-secondary/40 tracking-wide mt-1">

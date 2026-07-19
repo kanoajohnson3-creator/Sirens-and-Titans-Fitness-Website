@@ -59,7 +59,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="font-body text-xs font-medium tracking-[0.25em] text-text-secondary hover:text-text-primary uppercase transition-colors duration-200 relative group"
+                className="font-body text-sm font-medium tracking-[0.25em] text-text-secondary hover:text-text-primary uppercase transition-colors duration-200 relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-300" />
@@ -73,13 +73,13 @@ export default function Navbar() {
               href={WELLNESS_LIVING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:block font-body text-xs font-medium tracking-[0.25em] text-text-secondary hover:text-text-primary uppercase transition-colors duration-200"
+              className="hidden md:block font-body text-sm font-medium tracking-[0.25em] text-text-secondary hover:text-text-primary uppercase transition-colors duration-200"
             >
               Sign In
             </a>
             <Link
               href="/contact"
-              className="font-body text-xs font-medium tracking-[0.25em] text-bg-primary bg-gold hover:bg-gold-light px-5 py-2.5 uppercase transition-colors duration-200"
+              className="font-body text-sm font-medium tracking-[0.25em] text-bg-primary bg-gold hover:bg-gold-light px-5 py-2.5 uppercase transition-colors duration-200"
             >
               Start Training
             </Link>
@@ -137,7 +137,7 @@ export default function Navbar() {
             href={WELLNESS_LIVING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-body text-xs font-medium tracking-[0.25em] text-text-secondary uppercase"
+            className="font-body text-sm font-medium tracking-[0.25em] text-text-secondary uppercase"
           >
             Sign In → Client Portal
           </a>

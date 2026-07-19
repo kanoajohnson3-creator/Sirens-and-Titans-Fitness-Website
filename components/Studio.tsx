@@ -149,7 +149,7 @@ export default function Studio() {
                     <p className="font-body text-[10px] font-medium tracking-[0.2em] text-text-secondary/50 uppercase mb-1">
                       {h.days}
                     </p>
-                    <p className="font-body text-sm font-light text-text-primary tracking-wide">
+                    <p className="font-body text-base font-light text-text-primary tracking-wide">
                       {h.time}
                     </p>
                   </div>
@@ -177,7 +177,7 @@ export default function Studio() {
                     className="flex items-center gap-3"
                   >
                     <div className="w-1 h-1 bg-gold/60 flex-shrink-0" />
-                    <span className="font-body text-xs font-light text-text-secondary tracking-wide">
+                    <span className="font-body text-sm font-light text-text-secondary tracking-wide">
                       {item}
                     </span>
                   </motion.li>

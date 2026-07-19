@@ -26,12 +26,12 @@ export default function WellnessLivingWidget({ widgetUrl, height, title }: Props
           href={widgetUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-full bg-[#4A7C26] hover:bg-[#3D6B1E] text-white font-body font-medium text-sm uppercase py-4 transition-colors duration-200"
+          className="flex items-center justify-center gap-2 w-full bg-[#4A7C26] hover:bg-[#3D6B1E] text-white font-body font-medium text-base uppercase py-4 transition-colors duration-200"
           style={{ letterSpacing: '0.15em' }}
         >
           Book Your Session →
         </a>
-        <p className="font-body text-xs text-[#888888] text-center">
+        <p className="font-body text-sm text-[#888888] text-center">
           Opens the booking portal in a new tab
         </p>
       </div>

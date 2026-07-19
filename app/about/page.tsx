@@ -140,7 +140,7 @@ export default function AboutPage() {
                   ))}
                 </div>
 
-                <div className="space-y-4 text-sm font-body text-[#888888] leading-relaxed tracking-wide">
+                <div className="space-y-4 text-base font-body text-white leading-relaxed tracking-wide">
                   <p>
                     Jacques DeVore is a Certified Strength and Conditioning Specialist with over 20
                     years of experience training athletes from high school to Olympic and
@@ -208,7 +208,7 @@ export default function AboutPage() {
                   </div>
                   <div className="flex flex-col flex-1">
                     <span
-                      className="inline-block rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-xs px-3 py-1 font-medium w-fit"
+                      className="inline-block rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-sm px-3 py-1 font-medium w-fit"
                       style={{ letterSpacing: '0.1em' }}
                     >
                       PUBLISHED BY RODALE PRESS
@@ -219,7 +219,7 @@ export default function AboutPage() {
                     >
                       MAXIMUM OVERLOAD FOR CYCLISTS
                     </h3>
-                    <p className="font-body text-sm text-[#888888] leading-relaxed tracking-wide mt-3">
+                    <p className="font-body text-base text-white leading-relaxed tracking-wide mt-3">
                       A radical strength-based training program for increasing cycling speed,
                       athletic longevity, and overall health in half the training time.
                     </p>
@@ -227,7 +227,7 @@ export default function AboutPage() {
                       href="https://www.amazon.com/search?q=maximum+overload+cyclists+devore"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block mt-5 font-body text-xs font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-6 py-2.5 transition-colors duration-200 w-fit"
+                      className="inline-block mt-5 font-body text-sm font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-6 py-2.5 transition-colors duration-200 w-fit"
                       style={{ letterSpacing: '0.15em' }}
                     >
                       Get the Book →
@@ -239,7 +239,7 @@ export default function AboutPage() {
               {/* Video */}
               <div>
                 <span
-                  className="inline-block rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-xs px-3 py-1 font-medium mb-4"
+                  className="inline-block rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-sm px-3 py-1 font-medium mb-4"
                   style={{ letterSpacing: '0.1em' }}
                 >
                   WEBINAR
@@ -250,7 +250,7 @@ export default function AboutPage() {
                 >
                   HOW TO LOSE THE WEIGHT AND KEEP IT OFF
                 </h3>
-                <p className="font-body text-xs text-[#888888] mt-2 mb-4">
+                <p className="font-body text-sm text-[#888888] mt-2 mb-4">
                   Planibble Webinar featuring Jacques DeVore
                 </p>
                 <iframe
@@ -293,7 +293,7 @@ export default function AboutPage() {
                     href="https://voyagela.com/interview/meet-jacques-devore-of-sirens-titans-fitness-in-west-los-angeles/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-4 font-body text-xs font-medium uppercase text-[#4A7C26] border border-[#4A7C26] px-6 py-2 hover:bg-[#4A7C26] hover:text-white transition-colors duration-200"
+                    className="inline-block mt-4 font-body text-sm font-medium uppercase text-[#4A7C26] border border-[#4A7C26] px-6 py-2 hover:bg-[#4A7C26] hover:text-white transition-colors duration-200"
                     style={{ letterSpacing: '0.15em' }}
                   >
                     Read Feature →
@@ -345,7 +345,7 @@ export default function AboutPage() {
                         Host: {pod.host}
                       </p>
                     </div>
-                    <p className="font-body text-sm text-[#888888] leading-snug">{pod.topic}</p>
+                    <p className="font-body text-base text-white leading-snug">{pod.topic}</p>
                     <a
                       href={pod.href}
                       target="_blank"

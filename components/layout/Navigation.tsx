@@ -5,13 +5,13 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const navLinks = [
-  { label: 'Personal Training', href: '/personal-training' },
   { label: 'Training Programs', href: '/training-programs' },
+  { label: 'Personal Training', href: '/personal-training' },
   { label: 'Distance Coaching', href: '/distance-coaching' },
   { label: 'Contact', href: '/contact' },
   { label: 'Elite Athletes', href: '/athletes' },
   { label: 'Testimonials', href: '/testimonials' },
-  { label: 'Jacques Blog', href: '/blog' },
+  { label: 'Jacques Substack', href: '/blog' },
   { label: 'Press', href: '/press' },
 ]
 
@@ -147,7 +147,7 @@ export default function Navigation() {
             href={WELLNESS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-body text-xs font-medium tracking-[0.2em] text-[#888888] uppercase"
+            className="font-body text-sm font-medium tracking-[0.2em] text-[#888888] uppercase"
           >
             Sign In → Client Portal
           </a>

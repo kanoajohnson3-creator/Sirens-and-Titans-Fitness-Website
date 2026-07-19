@@ -3,7 +3,7 @@ export default function SectionLabel({ children }: { children: React.ReactNode }
     <div className="flex items-center gap-3 mb-4">
       <div className="w-6 h-px bg-[#4A7C26]" />
       <span
-        className="font-body text-xs font-medium uppercase text-[#4A7C26]"
+        className="font-body text-sm font-medium uppercase text-[#4A7C26]"
         style={{ letterSpacing: '0.2em' }}
       >
         {children}

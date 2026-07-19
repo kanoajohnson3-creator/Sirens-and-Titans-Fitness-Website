@@ -23,7 +23,7 @@ export default function FloatingCTA() {
     >
       <Link
         href="/contact"
-        className="bg-[#4A7C26] hover:bg-[#3D6B1E] text-white font-body font-medium text-sm px-6 py-3 transition-colors duration-200"
+        className="bg-[#4A7C26] hover:bg-[#3D6B1E] text-white font-body font-medium text-base px-6 py-3 transition-colors duration-200"
         style={{ letterSpacing: '0.08em' }}
       >
         Book a Session

@@ -92,6 +92,11 @@ export default function Trainers() {
               </motion.div>
             ))}
           </div>
+
+          <p className="font-body text-base text-white text-center max-w-2xl mx-auto mt-4">
+            All of our coaches are highly trained and educated with a passion and commitment for
+            excellence with our clients.
+          </p>
         </div>
 
         {/* Row 1: first 3 coaches */}

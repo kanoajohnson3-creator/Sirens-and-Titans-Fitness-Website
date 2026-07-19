@@ -67,7 +67,7 @@ export default function Testimonials() {
         <div className="flex items-center gap-3 mb-4">
           <div className="w-6 h-px bg-[#4A7C26]" />
           <span
-            className="font-body text-xs font-medium uppercase text-[#4A7C26]"
+            className="font-body text-sm font-medium uppercase text-[#4A7C26]"
             style={{ letterSpacing: '0.2em' }}
           >
             What They Say
@@ -93,14 +93,14 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1 mb-4" aria-label="5 stars">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i} className="text-[#4A7C26] text-sm" aria-hidden="true">
+                  <span key={i} className="text-[#4A7C26] text-base" aria-hidden="true">
                     ★
                   </span>
                 ))}
               </div>
 
               {/* Quote */}
-              <p className="font-body italic text-sm text-white/80 leading-relaxed line-clamp-5 flex-1">
+              <p className="font-body italic text-base text-white/80 leading-relaxed line-clamp-5 flex-1">
                 &ldquo;{t.quote}&rdquo;
               </p>
 
@@ -118,8 +118,8 @@ export default function Testimonials() {
                   </div>
                 )}
                 <div>
-                  <p className="font-body font-semibold text-white text-sm">{t.name}</p>
-                  <p className="font-body text-[#888888] text-xs mt-1">{t.detail}</p>
+                  <p className="font-body font-semibold text-white text-base">{t.name}</p>
+                  <p className="font-body text-[#888888] text-sm mt-1">{t.detail}</p>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function Testimonials() {
       <div className="flex justify-end mt-6">
         <a
           href="/testimonials"
-          className="text-[#4A7C26] text-sm font-medium mr-6 inline-flex items-center gap-2 hover:gap-3 transition-all duration-200 group"
+          className="text-[#4A7C26] text-base font-medium mr-6 inline-flex items-center gap-2 hover:gap-3 transition-all duration-200 group"
         >
           View All Testimonials
           <span

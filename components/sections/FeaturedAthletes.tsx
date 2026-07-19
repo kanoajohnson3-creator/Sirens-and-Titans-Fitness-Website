@@ -38,7 +38,7 @@ export default function FeaturedAthletes() {
         <div className="flex items-center gap-3 mb-4">
           <div className="w-6 h-px bg-[#4A7C26]" />
           <span
-            className="font-body text-xs font-medium uppercase text-[#4A7C26]"
+            className="font-body text-sm font-medium uppercase text-[#4A7C26]"
             style={{ letterSpacing: '0.2em' }}
           >
             Client Results
@@ -49,7 +49,7 @@ export default function FeaturedAthletes() {
           className="font-display text-white leading-none tracking-[0.03em]"
           style={{ fontSize: 'clamp(2.25rem, 6vw, 3.75rem)' }}
         >
-          ATHLETES WE HAVE BUILT
+          ATHLETES AND INDIVIDUALS WE HAVE HELPED BUILD
         </h2>
       </div>
 
@@ -80,7 +80,7 @@ export default function FeaturedAthletes() {
               {/* ── Card body ── */}
               <div className="p-6">
                 {/* Badge pill */}
-                <span className="rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-xs px-3 py-1 font-medium inline-block tracking-wide">
+                <span className="rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-sm px-3 py-1 font-medium inline-block tracking-wide">
                   {athlete.badge}
                 </span>
 
@@ -90,17 +90,17 @@ export default function FeaturedAthletes() {
                 </h3>
 
                 {/* Sport credential */}
-                <p className="font-body text-sm text-[#888888] mt-1 tracking-wide">
+                <p className="font-body text-base text-[#888888] mt-1 tracking-wide">
                   {athlete.sport}
                 </p>
 
                 {/* Pull quote */}
-                <p className="font-body italic text-sm text-white/70 mt-3 leading-relaxed line-clamp-3">
+                <p className="font-body italic text-base text-white/70 mt-3 leading-relaxed line-clamp-3">
                   &ldquo;{athlete.quote}&rdquo;
                 </p>
 
                 {/* Read Story link */}
-                <span className="text-[#4A7C26] text-sm font-medium mt-4 inline-flex items-center gap-2 hover:gap-3 transition-all duration-200 group/link">
+                <span className="text-[#4A7C26] text-base font-medium mt-4 inline-flex items-center gap-2 hover:gap-3 transition-all duration-200 group/link">
                   Read Story
                   <span
                     className="transition-transform duration-200 group-hover/link:translate-x-0.5"

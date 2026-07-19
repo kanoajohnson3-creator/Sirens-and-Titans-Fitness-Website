@@ -54,7 +54,7 @@ export default function PersonalTrainingPage() {
                 >
                   COACHED EVERY REP. EVERY SET. EVERY SESSION.
                 </h2>
-                <div className="space-y-4 font-body text-sm text-[#888888] leading-relaxed tracking-wide">
+                <div className="space-y-4 font-body text-base text-white leading-relaxed tracking-wide">
                   <p>
                     One-on-one personal training at Sirens and Titans is built entirely around you.
                     Your goals, your body, your sport, your schedule. Nothing is generic. Nothing is
@@ -86,11 +86,11 @@ export default function PersonalTrainingPage() {
                           className="font-display text-[#4A7C26] leading-none"
                           style={{ fontSize: 'clamp(2.5rem, 5vw, 3rem)' }}
                         >
-                          $175
+                          $185
                         </span>
-                        <span className="font-body text-sm text-[#888888] ml-2">per hour</span>
+                        <span className="font-body text-base text-[#888888] ml-2">per hour</span>
                       </div>
-                      <p className="font-body text-sm text-[#888888] leading-relaxed mt-3">
+                      <p className="font-body text-base text-white leading-relaxed mt-3">
                         One on one personal training with one of our certified strength and
                         conditioning coaches.
                       </p>
@@ -109,16 +109,16 @@ export default function PersonalTrainingPage() {
                         >
                           $250
                         </span>
-                        <span className="font-body text-sm text-[#888888] ml-2">per hour</span>
+                        <span className="font-body text-base text-[#888888] ml-2">per hour</span>
                       </div>
-                      <p className="font-body text-sm text-[#888888] leading-relaxed mt-3">
+                      <p className="font-body text-base text-white leading-relaxed mt-3">
                         One on one personal training and nutritional coaching directly with Jacques
                         DeVore, CSCS. The complete coaching experience.
                       </p>
                     </div>
                   </div>
 
-                  <p className="font-body text-xs text-[#888888] italic mt-4">
+                  <p className="font-body text-sm text-[#888888] italic mt-4">
                     All new clients begin with a full evaluation before their first session. No
                     exceptions.
                   </p>
@@ -137,19 +137,19 @@ export default function PersonalTrainingPage() {
             >
               READY TO START?
             </h2>
-            <p className="font-body text-sm text-[#888888] mt-4">
+            <p className="font-body text-base text-white mt-4">
               Every client begins with a full evaluation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-8">
               <Link
                 href="/contact"
-                className="font-body text-xs font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
+                className="font-body text-sm font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
                 style={{ letterSpacing: '0.15em' }}
               >
                 Book Your Evaluation →
               </Link>
               <div className="flex flex-col items-center gap-1">
-                <span className="font-body text-xs text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
+                <span className="font-body text-sm text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
                   Or call us directly
                 </span>
                 <a

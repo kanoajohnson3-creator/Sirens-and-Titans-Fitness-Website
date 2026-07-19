@@ -110,13 +110,13 @@ export default function Hero() {
         >
           <Link
             href="/contact"
-            className="font-body text-xs font-medium tracking-[0.25em] text-bg-primary bg-gold hover:bg-gold-light px-8 py-3.5 uppercase transition-colors duration-200"
+            className="font-body text-sm font-medium tracking-[0.25em] text-bg-primary bg-gold hover:bg-gold-light px-8 py-3.5 uppercase transition-colors duration-200"
           >
             Start Training
           </Link>
           <Link
             href="/#athletes"
-            className="font-body text-xs font-medium tracking-[0.25em] text-text-primary border border-border-subtle hover:border-text-secondary px-8 py-3.5 uppercase transition-colors duration-200"
+            className="font-body text-sm font-medium tracking-[0.25em] text-text-primary border border-border-subtle hover:border-text-secondary px-8 py-3.5 uppercase transition-colors duration-200"
           >
             Our Athletes
           </Link>

@@ -10,7 +10,7 @@ const programs = [
     number: '01',
     title: 'ELITE GROUP\nTRAINING',
     tag: 'Coached Every Rep',
-    body: 'High end personal training in a group. Individual programs, small group energy, coached every rep. Maximum 7 athletes.',
+    body: 'High end personal training in a group. Individual programs, small group energy, coached every rep. 7 clients per coach.',
     detail: 'Small Groups',
     accent: 'gold',
     href: '/training-programs',
@@ -20,7 +20,7 @@ const programs = [
     number: '02',
     title: 'PERSONAL\nTRAINING',
     tag: 'Private Sessions',
-    body: 'One on one coaching from $175/hr. Built entirely around your goals, your body, and your sport.',
+    body: 'One on one coaching from $185/hr. Built entirely around your goals, your body, and your sport.',
     detail: '1-on-1',
     accent: 'green',
     href: '/personal-training',
@@ -94,7 +94,7 @@ export default function Programs() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="font-body text-sm font-light text-text-secondary leading-relaxed max-w-xs tracking-wide"
+            className="font-body text-base font-light text-text-secondary leading-relaxed max-w-xs tracking-wide"
           >
             Four ways to train with S&T. Every program is science-based, coach-led, and built around results.
           </motion.p>
@@ -168,7 +168,7 @@ export default function Programs() {
                   </h3>
 
                   {/* Body */}
-                  <p className="font-body text-xs font-light text-text-secondary leading-relaxed tracking-wide">
+                  <p className="font-body text-sm font-light text-text-secondary leading-relaxed tracking-wide">
                     {program.body}
                   </p>
                 </div>

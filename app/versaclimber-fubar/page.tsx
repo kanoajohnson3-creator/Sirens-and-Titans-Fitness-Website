@@ -47,7 +47,7 @@ export default function VersaclimberFubarPage() {
             >
               30 MINUTES. MAXIMUM OUTPUT.
             </h2>
-            <p className="font-body text-sm text-[#888888] mt-4 max-w-2xl mx-auto leading-relaxed tracking-wide">
+            <p className="font-body text-base text-white mt-4 max-w-2xl mx-auto leading-relaxed tracking-wide">
               The world&apos;s best cardio machine, coached in a group of 7. Jacques DeVore holds
               the unofficial VersaClimber world mile record.
             </p>
@@ -67,7 +67,7 @@ export default function VersaclimberFubarPage() {
                 >
                   THE HARDEST 30 MINUTES IN FITNESS
                 </h2>
-                <div className="space-y-4 font-body text-sm text-[#888888] leading-relaxed tracking-wide">
+                <div className="space-y-4 font-body text-base text-white leading-relaxed tracking-wide">
                   <p>
                     FUBAR is Sirens and Titans&apos; signature VersaClimber class. 30 minutes of
                     coached, high intensity interval training on the VersaClimber — widely regarded
@@ -89,14 +89,14 @@ export default function VersaclimberFubarPage() {
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-3">
                       <span className="text-[#4A7C26] font-bold mt-0.5 flex-shrink-0">✓</span>
-                      <span className="font-body text-sm text-white">{f}</span>
+                      <span className="font-body text-base text-white">{f}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Link
                   href="/contact"
-                  className="inline-block mt-10 font-body text-xs font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-8 py-3 transition-colors duration-200"
+                  className="inline-block mt-10 font-body text-sm font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-8 py-3 transition-colors duration-200"
                   style={{ letterSpacing: '0.15em' }}
                 >
                   Try Your First Class →
@@ -127,19 +127,19 @@ export default function VersaclimberFubarPage() {
             >
               READY TO CLIMB?
             </h2>
-            <p className="font-body text-sm text-[#888888] mt-4">
+            <p className="font-body text-base text-white mt-4">
               30 minutes. Maximum effort. Real results.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-8">
               <Link
                 href="/contact"
-                className="font-body text-xs font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
+                className="font-body text-sm font-medium uppercase bg-[#4A7C26] hover:bg-[#3D6B1E] text-white px-10 py-4 transition-colors duration-200"
                 style={{ letterSpacing: '0.15em' }}
               >
                 Try Your First Class →
               </Link>
               <div className="flex flex-col items-center gap-1">
-                <span className="font-body text-xs text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
+                <span className="font-body text-sm text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
                   Or call us directly
                 </span>
                 <a

@@ -102,11 +102,11 @@ export default function Testimonials() {
             {Array.from({ length: 5 }).map((_, i) => (
               <span key={i} className="text-gold text-lg leading-none">★</span>
             ))}
-            <span className="font-body text-xs font-medium text-text-secondary ml-2 tracking-wide">
+            <span className="font-body text-sm font-medium text-text-secondary ml-2 tracking-wide">
               5.0 · Google &amp; Yelp
             </span>
           </div>
-          <p className="font-body text-xs font-light text-text-secondary/50 tracking-wide">
+          <p className="font-body text-sm font-light text-text-secondary/50 tracking-wide">
             Appointment Only · West Los Angeles
           </p>
         </motion.div>
@@ -140,20 +140,20 @@ function TestimonialCard({
         >
           &ldquo;
         </span>
-        <p className="font-body text-sm font-light text-text-primary/80 leading-relaxed tracking-wide">
+        <p className="font-body text-base font-light text-text-primary/80 leading-relaxed tracking-wide">
           {t.quote}
         </p>
       </div>
       <div className="mt-8 pt-5 border-t border-border-subtle flex items-end justify-between">
         <div>
-          <p className="font-body text-sm font-medium text-text-primary tracking-wide">{t.name}</p>
+          <p className="font-body text-base font-medium text-text-primary tracking-wide">{t.name}</p>
           <p className="font-body text-[10px] font-light text-text-secondary/50 tracking-[0.2em] uppercase mt-1">
             {t.sport}
           </p>
         </div>
         <div className="flex items-center gap-0.5">
           {Array.from({ length: 5 }).map((_, j) => (
-            <span key={j} className="text-gold/40 text-sm">★</span>
+            <span key={j} className="text-gold/40 text-base">★</span>
           ))}
         </div>
       </div>

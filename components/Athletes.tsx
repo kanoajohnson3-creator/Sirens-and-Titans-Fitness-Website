@@ -138,7 +138,7 @@ export default function Athletes() {
                 >
                   &ldquo;
                 </span>
-                <p className="font-body text-xs font-light text-text-secondary/80 leading-relaxed tracking-wide italic">
+                <p className="font-body text-sm font-light text-text-secondary/80 leading-relaxed tracking-wide italic">
                   {athlete.quote}
                 </p>
               </div>

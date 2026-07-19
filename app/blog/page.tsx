@@ -115,14 +115,14 @@ export default async function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[0, 1, 2].map((i) => (
                 <div key={i} className="bg-[#141414] p-8 border-t-2 border-[#4A7C26]">
-                  <p className="font-body text-sm text-[#888888] leading-relaxed">
+                  <p className="font-body text-base text-white leading-relaxed">
                     New content coming soon. Follow us on Substack for the latest from Jacques.
                   </p>
                   <a
                     href={SUBSTACK_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-8 font-body text-xs font-medium uppercase bg-gold hover:bg-gold-light text-bg-primary px-8 py-3 transition-colors duration-200"
+                    className="inline-block mt-8 font-body text-sm font-medium uppercase bg-gold hover:bg-gold-light text-bg-primary px-8 py-3 transition-colors duration-200"
                     style={{ letterSpacing: '0.15em' }}
                   >
                     Visit Substack
@@ -141,7 +141,7 @@ export default async function BlogPage() {
                   className="block bg-[#141414] hover:bg-[#1a1a1a] p-8 border-t-2 border-[#4A7C26] transition cursor-pointer"
                 >
                   <span
-                    className="font-body text-xs text-[#888888] uppercase"
+                    className="font-body text-sm text-[#888888] uppercase"
                     style={{ letterSpacing: '0.2em' }}
                   >
                     {post.pubDate}
@@ -149,10 +149,10 @@ export default async function BlogPage() {
                   <h2 className="font-display text-2xl text-white mt-2 tracking-[0.02em]">
                     {post.title}
                   </h2>
-                  <p className="font-body text-sm text-[#888888] leading-relaxed mt-3">
+                  <p className="font-body text-base text-white leading-relaxed mt-3">
                     {post.description}
                   </p>
-                  <span className="block font-body text-sm font-medium text-[#4A7C26] mt-4">
+                  <span className="block font-body text-base font-medium text-[#4A7C26] mt-4">
                     Read on Substack →
                   </span>
                 </a>
@@ -170,7 +170,7 @@ export default async function BlogPage() {
             <h2 className="font-display text-4xl text-white tracking-[0.03em]">
               SUBSCRIBE ON SUBSTACK
             </h2>
-            <p className="font-body text-sm text-[#888888] leading-relaxed mt-4">
+            <p className="font-body text-base text-white leading-relaxed mt-4">
               In depth training philosophy, health insights, and coaching content direct from
               Jacques.
             </p>
@@ -178,7 +178,7 @@ export default async function BlogPage() {
               href={SUBSTACK_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-8 font-body text-sm font-medium tracking-[0.25em] uppercase bg-gold hover:bg-gold-light text-bg-primary px-10 py-4 transition-colors duration-200"
+              className="inline-block mt-8 font-body text-base font-medium tracking-[0.25em] uppercase bg-gold hover:bg-gold-light text-bg-primary px-10 py-4 transition-colors duration-200"
             >
               Subscribe Free
             </a>

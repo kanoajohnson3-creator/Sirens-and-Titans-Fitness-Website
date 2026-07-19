@@ -69,7 +69,7 @@ export default function CTASection() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="font-body text-sm font-light text-text-secondary leading-relaxed max-w-md mt-8 tracking-wide"
+            className="font-body text-base font-light text-text-secondary leading-relaxed max-w-md mt-8 tracking-wide"
           >
             Book a free 30-minute consultation with one of our head coaches. We&apos;ll assess your goals, your history, and your timeline — and show you exactly what a S&T program looks like for you.
           </motion.p>
@@ -82,12 +82,12 @@ export default function CTASection() {
           >
             <Link
               href="/contact"
-              className="font-body text-sm font-medium tracking-[0.25em] text-bg-primary bg-gold hover:bg-gold-light px-10 py-4 uppercase transition-colors duration-200"
+              className="font-body text-base font-medium tracking-[0.25em] text-bg-primary bg-gold hover:bg-gold-light px-10 py-4 uppercase transition-colors duration-200"
             >
               Book Your Evaluation →
             </Link>
             <div className="flex flex-col items-start gap-1">
-              <span className="font-body text-xs text-text-secondary/50 uppercase" style={{ letterSpacing: '0.2em' }}>
+              <span className="font-body text-sm text-text-secondary/50 uppercase" style={{ letterSpacing: '0.2em' }}>
                 Or call us directly
               </span>
               <a
