@@ -46,7 +46,7 @@ export default function About() {
               NOT TRAINERS.
             </p>
             <p
-              className="font-display text-text-secondary/50 leading-[0.9] tracking-[0.04em] mt-2"
+              className="font-display text-white leading-[0.9] tracking-[0.04em] mt-2"
               style={{ fontSize: 'clamp(1.5rem, 4vw, 4rem)' }}
             >
               A COACH&rsquo;S JOB IS TO WIN.
@@ -70,7 +70,7 @@ export default function About() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <p className="font-body text-[10px] font-medium tracking-[0.3em] text-text-secondary/50 uppercase mb-2">
+            <p className="font-body text-[10px] font-medium tracking-[0.3em] text-white uppercase mb-2">
               Founder &amp; CEO
             </p>
             <h3
@@ -79,7 +79,7 @@ export default function About() {
             >
               JACQUES DeVORE
             </h3>
-            <p className="font-body text-base font-light text-text-secondary leading-relaxed tracking-wide">
+            <p className="font-body text-base font-light text-white leading-relaxed tracking-wide">
               20+ years as a Certified Strength and Conditioning Specialist. Jacques founded Titan Sports
               Performance in Santa Barbara before opening Sirens and Titans in Los Angeles. He coauthored{' '}
               <em>Maximum Overload for Cyclists</em> published by Rodale Press, holds the unofficial
@@ -95,7 +95,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.42 }}
             className="flex flex-col justify-start"
           >
-            <p className="font-body text-[10px] font-medium tracking-[0.3em] text-text-secondary/50 uppercase mb-6">
+            <p className="font-body text-[10px] font-medium tracking-[0.3em] text-white uppercase mb-6">
               Credentials
             </p>
             <div className="flex flex-wrap gap-2.5">
@@ -105,7 +105,7 @@ export default function About() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.4, delay: 0.5 + i * 0.07 }}
-                  className="font-body text-[10px] font-medium tracking-[0.25em] text-text-secondary uppercase border border-border-subtle px-4 py-2 hover:border-gold/40 hover:text-gold/80 transition-colors duration-300"
+                  className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase border border-border-subtle px-4 py-2 hover:border-gold/40 hover:text-gold/80 transition-colors duration-300"
                 >
                   {cred}
                 </motion.span>
@@ -119,13 +119,13 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="mt-10 pt-8 border-t border-border-subtle"
             >
-              <p className="font-body text-[10px] font-medium tracking-[0.25em] text-text-secondary/40 uppercase mb-2">
+              <p className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase mb-2">
                 Co-Author
               </p>
-              <p className="font-body text-base font-light text-text-secondary/70 italic tracking-wide">
+              <p className="font-body text-base font-light text-white italic tracking-wide">
                 Maximum Overload for Cyclists
               </p>
-              <p className="font-body text-[10px] font-light text-text-secondary/40 tracking-wide mt-1">
+              <p className="font-body text-[10px] font-light text-white tracking-wide mt-1">
                 Published by Rodale Press
               </p>
             </motion.div>

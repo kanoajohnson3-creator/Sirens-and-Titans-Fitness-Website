@@ -42,20 +42,20 @@ export default function Footer() {
             <p className="font-body text-sm font-light text-gold/70 tracking-[0.2em] uppercase mb-6">
               Truth in Fitness
             </p>
-            <p className="font-body text-sm font-light text-text-secondary/50 leading-relaxed tracking-wide max-w-[200px] mb-6">
+            <p className="font-body text-sm font-light text-white leading-relaxed tracking-wide max-w-[200px] mb-6">
               Science-based strength and conditioning for athletes and competitors at every level.
             </p>
             <div className="flex flex-col gap-2 mb-4">
               <a
                 href="tel:+13103070200"
-                className="font-body text-sm font-light text-text-secondary/60 hover:text-text-secondary tracking-wide transition-colors duration-200"
+                className="font-body text-sm font-light text-white hover:text-white tracking-wide transition-colors duration-200"
               >
                 310-307-0200
               </a>
-              <p className="font-body text-[10px] font-light text-text-secondary/40 tracking-wide">
+              <p className="font-body text-[10px] font-light text-white tracking-wide">
                 2242 S Sepulveda Blvd
               </p>
-              <p className="font-body text-[10px] font-light text-text-secondary/40 tracking-wide">
+              <p className="font-body text-[10px] font-light text-white tracking-wide">
                 Los Angeles, CA 90064
               </p>
             </div>
@@ -68,8 +68,8 @@ export default function Footer() {
                 { days: 'Sunday', time: 'Closed' },
               ].map((h) => (
                 <div key={h.days} className="flex items-center justify-between gap-3 max-w-[200px]">
-                  <span className="font-body text-[10px] font-medium text-text-secondary/60 tracking-wide">{h.days}</span>
-                  <span className="font-body text-[10px] font-light text-text-secondary/40 tracking-wide">{h.time}</span>
+                  <span className="font-body text-[10px] font-medium text-white tracking-wide">{h.days}</span>
+                  <span className="font-body text-[10px] font-light text-white tracking-wide">{h.time}</span>
                 </div>
               ))}
             </div>
@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-body text-[10px] font-medium tracking-[0.3em] text-text-secondary/50 uppercase mb-6">
+              <h4 className="font-body text-[10px] font-medium tracking-[0.3em] text-white uppercase mb-6">
                 {category}
               </h4>
               <ul className="flex flex-col gap-3">
@@ -98,14 +98,14 @@ export default function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-body text-sm font-light text-text-secondary/60 hover:text-gold tracking-wide transition-colors duration-200"
+                        className="font-body text-sm font-light text-white hover:text-gold tracking-wide transition-colors duration-200"
                       >
                         {link.label}
                       </a>
                     ) : (
                       <Link
                         href={link.href}
-                        className="font-body text-sm font-light text-text-secondary/60 hover:text-text-primary tracking-wide transition-colors duration-200 relative group"
+                        className="font-body text-sm font-light text-white hover:text-text-primary tracking-wide transition-colors duration-200 relative group"
                       >
                         {link.label}
                         <span className="absolute -bottom-px left-0 w-0 h-px bg-gold/40 group-hover:w-full transition-all duration-300" />

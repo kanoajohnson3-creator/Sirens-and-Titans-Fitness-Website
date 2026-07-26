@@ -122,7 +122,7 @@ export default function Athletes() {
                   >
                     {athlete.name}
                   </h3>
-                  <p className="font-body text-[10px] font-medium tracking-[0.2em] text-text-secondary/60 uppercase mt-1.5">
+                  <p className="font-body text-[10px] font-medium tracking-[0.2em] text-white uppercase mt-1.5">
                     {athlete.sport}
                   </p>
                 </div>
@@ -138,7 +138,7 @@ export default function Athletes() {
                 >
                   &ldquo;
                 </span>
-                <p className="font-body text-sm font-light text-text-secondary/80 leading-relaxed tracking-wide italic">
+                <p className="font-body text-sm font-light text-white leading-relaxed tracking-wide italic">
                   {athlete.quote}
                 </p>
               </div>

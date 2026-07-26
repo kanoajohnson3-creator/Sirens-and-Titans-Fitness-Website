@@ -20,6 +20,7 @@ type FeaturedAthlete = {
   attribution: string | null
   flipped: boolean
   image: string
+  imagePosition?: string
   gallery?: string[]
 }
 
@@ -79,6 +80,41 @@ const featuredAthletes: FeaturedAthlete[] = [
     attribution: null,
     flipped: true,
     image: '/Luca+Picture+1.webp',
+  },
+  {
+    slug: 'trent',
+    badge: 'D1 LACROSSE',
+    name: 'TRENT',
+    sport: 'Loyola University Maryland · D1 Lacrosse',
+    story:
+      'As I watched my teammates I previously played against just a year or so ago, I began to think about what I needed to do to get ahead of my class as I approached my college career. I realized I could not step up my game doing the same workouts as I did in high school. I saw two of my former teammates play at Harvard University and Villanova University excelling on the field as college lacrosse players. So I reached out during the offseason to find out what they were doing to train, get ahead of their peers, and transform their bodies to withstand the next level. Ironically they both were training locally with Jacques and the Sirens and Titans team. I immediately reached out to Jacques to inquire and schedule a personal assessment to see if this was the fit I was looking for. I was surprised by how tailored the workouts were to my personal position on the field. It was important that I trained with someone who knew the specifics of the body movements necessary for a D1 college Lacrosse player. It was also important that the trainer fed me the right mental food to get that extra rep. Jacques, Julian, and his team checked off all the boxes. Jacques and his team built a program that enhanced my agility, strength, and mental capacities. I feel more than ready and cannot wait to suit up this season with the Loyola University of Maryland Greyhounds.\n\nThank you Jacques, Julian and the team for the hard work and preparation.',
+    attribution: null,
+    flipped: false,
+    image: '/Trent2.webp',
+    imagePosition: '40% center',
+    gallery: ['/Trent2.webp', '/Trent3.webp', '/Trent4.webp', '/Trent5.webp'],
+  },
+  {
+    slug: 'owen-gaffney',
+    badge: 'HARVARD LACROSSE',
+    name: 'OWEN GAFFNEY',
+    sport: 'Harvard University · D1 Lacrosse',
+    story:
+      'After completing my senior year of high school I knew the summer going into my Freshman year was crucial for a successful Freshman season. My good friend Patrick Murphy who played soccer at Dartmouth recommended Jacques having nothing but great things to say about him and his program. Patrick told me that Sirens and Titans would push me and help me achieve my goals and he was right. During the first session I laid out my goals with Jacques and he formulated a unique plan to help me attain those goals. Every workout is uniquely tailored to the individual and calculated to help attain results.\n\nI started training in the Summer of 2021 and I have not looked back. I trained with Jacques and Alfonso for three quarters of the summer and I arrived on campus in late August with a noticeable difference in my fitness level. I worked out in the morning two to three times a week and sprinkled in some VersaClimber sessions which improved my mental strength and aerobic capacity significantly.\n\nThe greatest part about the program in my opinion is the constant strive for improvement. Whether it is the daily quote on the white board or the reminders from Jacques mid-set Sirens and Titans is an extremely motivating space. Jacques works tirelessly to help his clients improve. Also after a couple of weeks I started to build relationships with the other athletes and I could feel the sense of community that Sirens and Titans offer. Everyone pushes each other to be better and we all support each other a testament to Jacques leadership.\n\nDuring my Freshman season I was able to start in every game. I felt stronger quicker and more balanced than ever before and it greatly helped my confidence when stepping on the field with guys four years older than myself. I knew that Jacques prepared me for the season and I felt my overall athleticism increase.',
+    attribution: null,
+    flipped: true,
+    image: '/Owen_G_Collage.webp',
+  },
+  {
+    slug: 'patrick-murphy',
+    badge: 'DARTMOUTH SOCCER',
+    name: 'PATRICK MURPHY',
+    sport: 'Dartmouth College · D1 Soccer',
+    story:
+      'I am a collegiate soccer player at Dartmouth with the goal of playing professionally once I graduate. I have suffered with some nagging Patella Tendonitis for the last few years. I had worked with some top physical therapy people across the country received three to four PRP injections and even had surgery on the area. In spite of this I saw little to no relief. I contacted Jacques as I was familiar with his training methodology when I was in high school and playing at the Galaxy Academy. I came to Jacques because I had simply run out of options and had spent the better part of two years either on the sidelines or in serious knee pain when playing. When I first came in to see Jacques I could barely squat and had trouble putting any sort of weight on my right leg without severe pain in my knee. After working with Jacques for two to three months I am confident and thankful to say that I am the healthiest I have been in over three years and have very minimal pain in the same area. Unlike traditional doctors and physical therapy personnel Jacques was able to take a more holistic view of my body and realize that my knee pain was a result of muscular imbalances and improper techniques that I had developed from playing through injuries. We were able to work together to find a solution and develop a plan to get healthy and the results speak for themselves.\n\nI would recommend Jacques to any high level athlete because he is a genius who has a knowledge of the body and the way that it operates unlike anybody I have ever worked with before. On top of that he truly cares about his clients and their wellbeing and is willing to do anything to help them achieve their personal goals.',
+    attribution: null,
+    flipped: false,
+    image: '/Patrick_Murphy.webp',
   },
 ]
 
@@ -163,10 +199,11 @@ const capabilities = [
 export default function AthletesPage() {
   return (
     <>
+      <div style={{height: '80px'}} />
       <Navigation />
       <main className="bg-[#080808]">
         {/* Hero */}
-        <div className="h-64 bg-[#111111] flex items-end pb-12 border-b border-[#1E1E1E]">
+        <div className="relative z-0 h-64 bg-[#111111] flex items-end pt-32 pb-12 border-b border-[#1E1E1E]">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <SectionLabel>Elite Athletes</SectionLabel>
             <h1
@@ -226,6 +263,7 @@ export default function AthletesPage() {
                       fill
                       loading="lazy"
                       className="object-cover"
+                      style={{ objectPosition: athlete.imagePosition ?? 'center center' }}
                     />
                     <div className="absolute inset-0 bg-black/50" />
                     {/* Badge */}
@@ -250,12 +288,12 @@ export default function AthletesPage() {
                       {athlete.name}
                     </h3>
                     <p
-                      className="font-body text-[10px] font-medium uppercase text-[#888888] mb-6"
+                      className="font-body text-[10px] font-medium uppercase text-white mb-6"
                       style={{ letterSpacing: '0.2em' }}
                     >
                       {athlete.sport}
                     </p>
-                    <p className="font-body text-base text-white leading-relaxed tracking-wide">
+                    <p className="font-body text-base text-white leading-relaxed tracking-wide whitespace-pre-line">
                       {athlete.story}
                     </p>
                     {athlete.attribution && (
@@ -264,13 +302,18 @@ export default function AthletesPage() {
                       </p>
                     )}
 
-                    {/* Katherine Wood photo gallery */}
+                    {/* Photo gallery */}
                     {athlete.gallery && (
-                      <div className="flex gap-2 mt-6">
-                        {athlete.gallery.map((src) => (
+                      <div
+                        className="grid gap-2 mt-6"
+                        style={{
+                          gridTemplateColumns: `repeat(${athlete.gallery.length}, minmax(0, 1fr))`,
+                        }}
+                      >
+                        {athlete.gallery.map((src, i) => (
                           <div
-                            key={src}
-                            className="relative flex-1 h-20 rounded-sm overflow-hidden"
+                            key={`${src}-${i}`}
+                            className="relative aspect-square rounded-sm overflow-hidden"
                           >
                             <Image
                               src={src}
@@ -294,10 +337,12 @@ export default function AthletesPage() {
         {/* Full roster */}
         <section className="bg-[#0D0D0D] py-24">
           <div className="max-w-7xl mx-auto px-6">
+            <h2 className="font-display text-5xl text-white mb-12 text-center">
+              OTHER WORLD CLASS ATHLETES AND TEAMS WE HAVE TRAINED
+            </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               {/* Individual athletes */}
               <div>
-                <SectionLabel>Individual Athletes</SectionLabel>
                 <ul className="mt-6">
                   {individualAthletes.map((a) => (
                     <li
@@ -305,7 +350,7 @@ export default function AthletesPage() {
                       className="flex items-start justify-between gap-4 border-b border-[#1E1E1E] py-3"
                     >
                       <span className="font-body font-medium text-base text-white">{a.name}</span>
-                      <span className="font-body text-sm text-[#888888] text-right flex-shrink-0 max-w-[55%]">
+                      <span className="font-body text-sm text-white text-right flex-shrink-0 max-w-[55%]">
                         {a.credential}
                       </span>
                     </li>
@@ -315,7 +360,6 @@ export default function AthletesPage() {
 
               {/* Teams */}
               <div>
-                <SectionLabel>Teams Trained</SectionLabel>
                 <ul className="mt-6">
                   {teams.map((t) => (
                     <li
@@ -323,7 +367,7 @@ export default function AthletesPage() {
                       className="flex items-start justify-between gap-4 border-b border-[#1E1E1E] py-3"
                     >
                       <span className="font-body font-medium text-base text-white">{t.name}</span>
-                      <span className="font-body text-sm text-[#888888] text-right flex-shrink-0 max-w-[45%]">
+                      <span className="font-body text-sm text-white text-right flex-shrink-0 max-w-[45%]">
                         {t.credential}
                       </span>
                     </li>
@@ -349,7 +393,7 @@ export default function AthletesPage() {
               {capabilities.map((cap) => (
                 <span
                   key={cap}
-                  className="font-body text-base text-[#888888] border border-[#4A7C26] px-4 py-2 rounded-full hover:text-[#4A7C26] transition-colors duration-200"
+                  className="font-body text-base text-white border border-[#4A7C26] px-4 py-2 rounded-full hover:text-[#4A7C26] transition-colors duration-200"
                 >
                   {cap}
                 </span>
@@ -365,7 +409,7 @@ export default function AthletesPage() {
                 Start Your Evaluation →
               </Link>
               <div className="flex flex-col items-center gap-1">
-                <span className="font-body text-sm text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
+                <span className="font-body text-sm text-white uppercase" style={{ letterSpacing: '0.2em' }}>
                   Or call us directly
                 </span>
                 <a

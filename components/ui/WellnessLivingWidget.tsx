@@ -31,7 +31,7 @@ export default function WellnessLivingWidget({ widgetUrl, height, title }: Props
         >
           Book Your Session →
         </a>
-        <p className="font-body text-sm text-[#888888] text-center">
+        <p className="font-body text-sm text-white text-center">
           Opens the booking portal in a new tab
         </p>
       </div>

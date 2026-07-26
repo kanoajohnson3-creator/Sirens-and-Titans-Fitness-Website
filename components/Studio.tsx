@@ -78,7 +78,7 @@ export default function Studio() {
             transition={{ duration: 0.65, delay: 0.2 }}
             className="lg:col-span-2 bg-bg-card p-8 md:p-12"
           >
-            <span className="font-body text-[10px] font-medium tracking-[0.3em] text-text-secondary/60 uppercase block mb-6">
+            <span className="font-body text-[10px] font-medium tracking-[0.3em] text-white uppercase block mb-6">
               Location
             </span>
             <address className="not-italic">
@@ -86,7 +86,7 @@ export default function Studio() {
                 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}>
                 2242 S Sepulveda Blvd
               </p>
-              <p className="font-display text-text-secondary leading-tight tracking-[0.03em]"
+              <p className="font-display text-white leading-tight tracking-[0.03em]"
                 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}>
                 Los Angeles, CA 90064
               </p>
@@ -117,13 +117,13 @@ export default function Studio() {
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <span className="font-body text-[10px] font-medium tracking-[0.25em] text-text-secondary/60 uppercase border border-border-subtle px-3 py-1.5">
+              <span className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase border border-border-subtle px-3 py-1.5">
                 Parking Available
               </span>
-              <span className="font-body text-[10px] font-medium tracking-[0.25em] text-text-secondary/60 uppercase border border-border-subtle px-3 py-1.5">
+              <span className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase border border-border-subtle px-3 py-1.5">
                 Metro Accessible
               </span>
-              <span className="font-body text-[10px] font-medium tracking-[0.25em] text-text-secondary/60 uppercase border border-border-subtle px-3 py-1.5">
+              <span className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase border border-border-subtle px-3 py-1.5">
                 Private Entrance
               </span>
             </div>
@@ -138,13 +138,13 @@ export default function Studio() {
               transition={{ duration: 0.65, delay: 0.3 }}
               className="bg-bg-card p-8 flex-1"
             >
-              <span className="font-body text-[10px] font-medium tracking-[0.3em] text-text-secondary/60 uppercase block mb-6">
+              <span className="font-body text-[10px] font-medium tracking-[0.3em] text-white uppercase block mb-6">
                 Hours
               </span>
               <div className="flex flex-col gap-4">
                 {hours.map((h) => (
                   <div key={h.days}>
-                    <p className="font-body text-[10px] font-medium tracking-[0.2em] text-text-secondary/50 uppercase mb-1">
+                    <p className="font-body text-[10px] font-medium tracking-[0.2em] text-white uppercase mb-1">
                       {h.days}
                     </p>
                     <p className="font-body text-base font-light text-text-primary tracking-wide">
@@ -162,7 +162,7 @@ export default function Studio() {
               transition={{ duration: 0.65, delay: 0.4 }}
               className="bg-bg-card p-8 flex-1"
             >
-              <span className="font-body text-[10px] font-medium tracking-[0.3em] text-text-secondary/60 uppercase block mb-6">
+              <span className="font-body text-[10px] font-medium tracking-[0.3em] text-white uppercase block mb-6">
                 Amenities
               </span>
               <ul className="flex flex-col gap-2.5">
@@ -175,7 +175,7 @@ export default function Studio() {
                     className="flex items-center gap-3"
                   >
                     <div className="w-1 h-1 bg-gold/60 flex-shrink-0" />
-                    <span className="font-body text-sm font-light text-text-secondary tracking-wide">
+                    <span className="font-body text-sm font-light text-white tracking-wide">
                       {item}
                     </span>
                   </motion.li>

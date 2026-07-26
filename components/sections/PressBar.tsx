@@ -49,7 +49,7 @@ export default function PressBar() {
           {doubled.map((pub, i) => (
             <span key={i} className="flex items-center">
               <span
-                className="font-body font-medium text-base text-[#888888] hover:text-[#4A7C26] transition-colors duration-200 uppercase whitespace-nowrap px-7 cursor-default"
+                className="font-body font-medium text-base text-white hover:text-[#4A7C26] transition-colors duration-200 uppercase whitespace-nowrap px-7 cursor-default"
                 style={{ letterSpacing: '0.15em' }}
               >
                 {pub}

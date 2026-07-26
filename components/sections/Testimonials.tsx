@@ -100,7 +100,7 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="font-body italic text-base text-white/80 leading-relaxed line-clamp-5 flex-1">
+              <p className="font-body italic text-base text-white leading-relaxed line-clamp-5 flex-1">
                 &ldquo;{t.quote}&rdquo;
               </p>
 
@@ -119,7 +119,7 @@ export default function Testimonials() {
                 )}
                 <div>
                   <p className="font-body font-semibold text-white text-base">{t.name}</p>
-                  <p className="font-body text-[#888888] text-sm mt-1">{t.detail}</p>
+                  <p className="font-body text-white text-sm mt-1">{t.detail}</p>
                 </div>
               </div>
             </div>

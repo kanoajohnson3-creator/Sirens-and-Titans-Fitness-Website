@@ -96,7 +96,7 @@ export default function AboutPage() {
       <Navigation />
       <main className="bg-[#080808]">
         {/* Hero */}
-        <div className="h-96 bg-[#111111] flex items-end pb-16 border-b border-[#1E1E1E]">
+        <div className="h-96 bg-[#111111] flex items-end pt-24 pb-16 border-b border-[#1E1E1E]">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <SectionLabel>Founder and Head Coach</SectionLabel>
             <h1
@@ -132,7 +132,7 @@ export default function AboutPage() {
                   {credentials.map((c) => (
                     <span
                       key={c}
-                      className="font-body text-[10px] font-medium uppercase border border-[#1E1E1E] text-[#888888] px-3 py-1.5 hover:border-[#4A7C26]/40 hover:text-[#4A7C26]/80 transition-colors duration-200"
+                      className="font-body text-[10px] font-medium uppercase border border-[#1E1E1E] text-white px-3 py-1.5 hover:border-[#4A7C26]/40 hover:text-[#4A7C26]/80 transition-colors duration-200"
                       style={{ letterSpacing: '0.15em' }}
                     >
                       {c}
@@ -250,7 +250,7 @@ export default function AboutPage() {
                 >
                   HOW TO LOSE THE WEIGHT AND KEEP IT OFF
                 </h3>
-                <p className="font-body text-sm text-[#888888] mt-2 mb-4">
+                <p className="font-body text-sm text-white mt-2 mb-4">
                   Planibble Webinar featuring Jacques DeVore
                 </p>
                 <iframe
@@ -341,7 +341,7 @@ export default function AboutPage() {
                       >
                         {pod.show}
                       </p>
-                      <p className="font-body text-[10px] text-[#888888]/60 mt-0.5">
+                      <p className="font-body text-[10px] text-white mt-0.5">
                         Host: {pod.host}
                       </p>
                     </div>

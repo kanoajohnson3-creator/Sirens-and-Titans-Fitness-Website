@@ -35,7 +35,7 @@ export default function Philosophy() {
               >
                 {stat.value}
               </span>
-              <span className="font-body text-[10px] font-medium tracking-[0.28em] text-text-secondary/70 uppercase leading-snug">
+              <span className="font-body text-[10px] font-medium tracking-[0.28em] text-white uppercase leading-snug">
                 {stat.label}
               </span>
             </motion.div>

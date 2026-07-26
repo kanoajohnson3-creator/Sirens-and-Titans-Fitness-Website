@@ -97,7 +97,7 @@ export default async function BlogPage() {
       <Navigation />
       <main className="bg-[#080808] min-h-screen">
         {/* Hero */}
-        <div className="h-64 bg-[#111111] flex items-end pb-12 border-b border-[#1E1E1E]">
+        <div className="h-64 bg-[#111111] flex items-end pt-24 pb-12 border-b border-[#1E1E1E]">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <SectionLabel>Jacques DeVore</SectionLabel>
             <h1
@@ -141,7 +141,7 @@ export default async function BlogPage() {
                   className="block bg-[#141414] hover:bg-[#1a1a1a] p-8 border-t-2 border-[#4A7C26] transition cursor-pointer"
                 >
                   <span
-                    className="font-body text-sm text-[#888888] uppercase"
+                    className="font-body text-sm text-white uppercase"
                     style={{ letterSpacing: '0.2em' }}
                   >
                     {post.pubDate}

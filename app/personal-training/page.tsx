@@ -17,7 +17,7 @@ export default function PersonalTrainingPage() {
       <Navigation />
       <main className="bg-[#080808]">
         {/* Hero */}
-        <div className="h-64 bg-[#111111] flex items-end pb-12 border-b border-[#1E1E1E]">
+        <div className="h-64 bg-[#111111] flex items-end pt-24 pb-12 border-b border-[#1E1E1E]">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <SectionLabel>One on One</SectionLabel>
             <h1
@@ -36,7 +36,7 @@ export default function PersonalTrainingPage() {
               {/* Left — photo */}
               <div className="relative min-h-[500px] overflow-hidden">
                 <Image
-                  src="/Jacques%20Misc%20Photo.webp"
+                  src="/Personal%20Training%20photo%203.webp"
                   alt="Personal training at Sirens & Titans Fitness"
                   fill
                   loading="lazy"
@@ -88,7 +88,7 @@ export default function PersonalTrainingPage() {
                         >
                           $185
                         </span>
-                        <span className="font-body text-base text-[#888888] ml-2">per hour</span>
+                        <span className="font-body text-base text-white ml-2">per hour</span>
                       </div>
                       <p className="font-body text-base text-white leading-relaxed mt-3">
                         One on one personal training with one of our certified strength and
@@ -109,7 +109,7 @@ export default function PersonalTrainingPage() {
                         >
                           $250
                         </span>
-                        <span className="font-body text-base text-[#888888] ml-2">per hour</span>
+                        <span className="font-body text-base text-white ml-2">per hour</span>
                       </div>
                       <p className="font-body text-base text-white leading-relaxed mt-3">
                         One on one personal training and nutritional coaching directly with Jacques
@@ -118,7 +118,7 @@ export default function PersonalTrainingPage() {
                     </div>
                   </div>
 
-                  <p className="font-body text-sm text-[#888888] italic mt-4">
+                  <p className="font-body text-sm text-white italic mt-4">
                     All new clients begin with a full evaluation before their first session. No
                     exceptions.
                   </p>
@@ -149,7 +149,7 @@ export default function PersonalTrainingPage() {
                 Book Your Evaluation →
               </Link>
               <div className="flex flex-col items-center gap-1">
-                <span className="font-body text-sm text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
+                <span className="font-body text-sm text-white uppercase" style={{ letterSpacing: '0.2em' }}>
                   Or call us directly
                 </span>
                 <a

@@ -26,7 +26,7 @@ export default function VersaclimberFubarPage() {
       <Navigation />
       <main className="bg-[#080808]">
         {/* Hero */}
-        <div className="h-64 bg-[#111111] flex items-end pb-12 border-b border-[#1E1E1E]">
+        <div className="h-64 bg-[#111111] flex items-end pt-24 pb-12 border-b border-[#1E1E1E]">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <SectionLabel>Signature Class</SectionLabel>
             <h1
@@ -139,7 +139,7 @@ export default function VersaclimberFubarPage() {
                 Try Your First Class →
               </Link>
               <div className="flex flex-col items-center gap-1">
-                <span className="font-body text-sm text-[#888888] uppercase" style={{ letterSpacing: '0.2em' }}>
+                <span className="font-body text-sm text-white uppercase" style={{ letterSpacing: '0.2em' }}>
                   Or call us directly
                 </span>
                 <a

@@ -44,10 +44,10 @@ export default function Navbar() {
             </span>
             <div className="h-7 w-px bg-border-subtle hidden sm:block" />
             <div className="hidden sm:flex flex-col gap-0.5">
-              <span className="font-body text-[10px] font-medium tracking-[0.28em] text-text-secondary uppercase leading-none">
+              <span className="font-body text-[10px] font-medium tracking-[0.28em] text-white uppercase leading-none">
                 Sirens &amp; Titans
               </span>
-              <span className="font-body text-[9px] font-light tracking-[0.2em] text-text-secondary/50 uppercase leading-none">
+              <span className="font-body text-[9px] font-light tracking-[0.2em] text-white uppercase leading-none">
                 Los Angeles, CA
               </span>
             </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="font-body text-sm font-medium tracking-[0.25em] text-text-secondary hover:text-text-primary uppercase transition-colors duration-200 relative group"
+                className="font-body text-sm font-medium tracking-[0.25em] text-white hover:text-text-primary uppercase transition-colors duration-200 relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-300" />
@@ -73,7 +73,7 @@ export default function Navbar() {
               href={WELLNESS_LIVING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:block font-body text-sm font-medium tracking-[0.25em] text-text-secondary hover:text-text-primary uppercase transition-colors duration-200"
+              className="hidden md:block font-body text-sm font-medium tracking-[0.25em] text-white hover:text-text-primary uppercase transition-colors duration-200"
             >
               Sign In
             </a>
@@ -137,7 +137,7 @@ export default function Navbar() {
             href={WELLNESS_LIVING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-body text-sm font-medium tracking-[0.25em] text-text-secondary uppercase"
+            className="font-body text-sm font-medium tracking-[0.25em] text-white uppercase"
           >
             Sign In → Client Portal
           </a>

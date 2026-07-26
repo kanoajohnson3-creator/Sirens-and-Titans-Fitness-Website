@@ -102,11 +102,11 @@ export default function Testimonials() {
             {Array.from({ length: 5 }).map((_, i) => (
               <span key={i} className="text-gold text-lg leading-none">★</span>
             ))}
-            <span className="font-body text-sm font-medium text-text-secondary ml-2 tracking-wide">
+            <span className="font-body text-sm font-medium text-white ml-2 tracking-wide">
               5.0 · Google &amp; Yelp
             </span>
           </div>
-          <p className="font-body text-sm font-light text-text-secondary/50 tracking-wide">
+          <p className="font-body text-sm font-light text-white tracking-wide">
             Appointment Only · West Los Angeles
           </p>
         </motion.div>
@@ -147,7 +147,7 @@ function TestimonialCard({
       <div className="mt-8 pt-5 border-t border-border-subtle flex items-end justify-between">
         <div>
           <p className="font-body text-base font-medium text-text-primary tracking-wide">{t.name}</p>
-          <p className="font-body text-[10px] font-light text-text-secondary/50 tracking-[0.2em] uppercase mt-1">
+          <p className="font-body text-[10px] font-light text-white tracking-[0.2em] uppercase mt-1">
             {t.sport}
           </p>
         </div>

@@ -31,7 +31,7 @@ export default function PressBar() {
             className="flex items-center gap-4 flex-shrink-0"
           >
             <div className="w-6 h-px bg-gold/40" />
-            <span className="font-body text-[9px] font-medium tracking-[0.35em] text-text-secondary/40 uppercase whitespace-nowrap">
+            <span className="font-body text-[9px] font-medium tracking-[0.35em] text-white uppercase whitespace-nowrap">
               As Featured In
             </span>
           </motion.div>
@@ -47,7 +47,7 @@ export default function PressBar() {
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
-                className="font-body text-[10px] font-medium tracking-[0.25em] text-text-secondary/35 uppercase hover:text-text-secondary/60 transition-colors duration-200 cursor-default"
+                className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase hover:text-white transition-colors duration-200 cursor-default"
               >
                 {pub}
               </motion.span>

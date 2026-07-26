@@ -179,7 +179,7 @@ function CoachCard({
       {/* Card body */}
       <div className="p-5 md:p-6">
         <div className="flex items-start justify-between gap-3 mb-3">
-          <span className="font-body text-[10px] font-medium tracking-[0.2em] text-text-secondary/60 uppercase">
+          <span className="font-body text-[10px] font-medium tracking-[0.2em] text-white uppercase">
             {coach.role}
           </span>
           <span
@@ -192,7 +192,7 @@ function CoachCard({
             {coach.credential}
           </span>
         </div>
-        <p className="font-body text-[11px] font-light text-text-secondary/50 leading-relaxed tracking-wide">
+        <p className="font-body text-[11px] font-light text-white leading-relaxed tracking-wide">
           {coach.detail}
         </p>
       </div>

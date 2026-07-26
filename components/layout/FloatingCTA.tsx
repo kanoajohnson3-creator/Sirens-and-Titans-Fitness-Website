@@ -30,7 +30,7 @@ export default function FloatingCTA() {
       </Link>
       <button
         onClick={() => setDismissed(true)}
-        className="bg-[#2D5016] hover:bg-[#3D6B1E] text-white/60 hover:text-white w-8 flex items-center justify-center text-base transition-colors duration-200"
+        className="bg-[#2D5016] hover:bg-[#3D6B1E] text-white hover:text-white w-8 flex items-center justify-center text-base transition-colors duration-200"
         aria-label="Dismiss"
       >
         ×

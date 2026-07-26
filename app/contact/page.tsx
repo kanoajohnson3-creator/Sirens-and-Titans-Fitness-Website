@@ -30,10 +30,11 @@ const facilityPhotos = [
 export default function ContactPage() {
   return (
     <>
+      <div style={{height: '80px'}} />
       <Navigation />
       <main className="bg-[#080808]">
         {/* Hero */}
-        <div className="h-64 bg-[#111111] flex items-end pb-12 border-b border-[#1E1E1E]">
+        <div className="h-64 bg-[#111111] flex items-end pt-32 pb-12 border-b border-[#1E1E1E]">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <SectionLabel>Get Started</SectionLabel>
             <h1
@@ -84,7 +85,7 @@ export default function ContactPage() {
                   {/* Phone */}
                   <div>
                     <p
-                      className="font-body text-[10px] font-medium uppercase text-[#888888] mb-1"
+                      className="font-body text-[10px] font-medium uppercase text-white mb-1"
                       style={{ letterSpacing: '0.2em' }}
                     >
                       Phone
@@ -101,20 +102,20 @@ export default function ContactPage() {
                   {/* Location */}
                   <div>
                     <p
-                      className="font-body text-[10px] font-medium uppercase text-[#888888] mb-1"
+                      className="font-body text-[10px] font-medium uppercase text-white mb-1"
                       style={{ letterSpacing: '0.2em' }}
                     >
                       Location
                     </p>
                     <p className="font-body text-base text-white">2242 S Sepulveda Blvd</p>
                     <p className="font-body text-base text-white">Los Angeles, CA 90064</p>
-                    <p className="font-body text-sm text-[#888888]/60 mt-0.5">By appointment only</p>
+                    <p className="font-body text-sm text-white mt-0.5">By appointment only</p>
                   </div>
 
                   {/* Hours */}
                   <div>
                     <p
-                      className="font-body text-[10px] font-medium uppercase text-[#888888] mb-3"
+                      className="font-body text-[10px] font-medium uppercase text-white mb-3"
                       style={{ letterSpacing: '0.2em' }}
                     >
                       Hours
@@ -128,7 +129,7 @@ export default function ContactPage() {
                       ].map((h) => (
                         <div key={h.days} className="flex items-center justify-between gap-2">
                           <span className="font-body text-base font-medium text-white">{h.days}</span>
-                          <span className="font-body text-base text-[#888888]">{h.time}</span>
+                          <span className="font-body text-base text-white">{h.time}</span>
                         </div>
                       ))}
                     </div>
@@ -172,7 +173,7 @@ export default function ContactPage() {
                   href={WELLNESS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center font-body text-sm font-medium uppercase border border-[#1E1E1E] hover:border-[#4A7C26] text-[#888888] hover:text-white py-3 transition-colors duration-200"
+                  className="block w-full text-center font-body text-sm font-medium uppercase border border-[#1E1E1E] hover:border-[#4A7C26] text-white hover:text-white py-3 transition-colors duration-200"
                   style={{ letterSpacing: '0.15em' }}
                 >
                   Sign In to WellnessLiving →

@@ -14,7 +14,7 @@ const programs = [
     detail: 'Small Groups',
     accent: 'gold',
     href: '/training-programs',
-    photos: ['/Trent2.webp', '/Trent3.webp', '/Gym+photos4.webp'] as string[],
+    photos: ['/NFL%20Player.webp'] as string[],
   },
   {
     number: '02',
@@ -24,7 +24,7 @@ const programs = [
     detail: '1-on-1',
     accent: 'green',
     href: '/personal-training',
-    photos: ['/Trent4.webp', '/Trent5.webp'] as string[],
+    photos: ['/Personal%20Training%20Photo.webp'] as string[],
   },
   {
     number: '03',
@@ -94,7 +94,7 @@ export default function Programs() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="font-body text-base font-light text-text-secondary leading-relaxed max-w-xs tracking-wide"
+            className="font-body text-base font-light text-white leading-relaxed max-w-xs tracking-wide"
           >
             Four ways to train with S&T. Every program is science-based, coach-led, and built around results.
           </motion.p>
@@ -150,7 +150,7 @@ export default function Programs() {
                     >
                       {program.number}
                     </span>
-                    <span className="font-body text-[9px] font-medium tracking-[0.3em] text-text-secondary/50 uppercase border border-border-subtle px-2.5 py-1">
+                    <span className="font-body text-[9px] font-medium tracking-[0.3em] text-white uppercase border border-border-subtle px-2.5 py-1">
                       {program.tag}
                     </span>
                   </div>
@@ -168,14 +168,14 @@ export default function Programs() {
                   </h3>
 
                   {/* Body */}
-                  <p className="font-body text-sm font-light text-text-secondary leading-relaxed tracking-wide">
+                  <p className="font-body text-sm font-light text-white leading-relaxed tracking-wide">
                     {program.body}
                   </p>
                 </div>
 
                 {/* Bottom row */}
                 <div className="flex items-center justify-between mt-8 pt-6 border-t border-border-subtle">
-                  <span className="font-body text-[10px] font-medium tracking-[0.2em] text-text-secondary/60 uppercase">
+                  <span className="font-body text-[10px] font-medium tracking-[0.2em] text-white uppercase">
                     {program.detail}
                   </span>
                   <Link

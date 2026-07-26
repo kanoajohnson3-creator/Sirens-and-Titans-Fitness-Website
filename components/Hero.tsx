@@ -96,7 +96,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.5, ease: 'easeOut' }}
-          className="font-body text-base md:text-lg font-light text-text-secondary max-w-xl mt-6 leading-relaxed tracking-wide"
+          className="font-body text-base md:text-lg font-light text-white max-w-xl mt-6 leading-relaxed tracking-wide"
         >
           High end personal training in a group setting. Results-driven, science-based strength and conditioning for athletes and competitors at every level.
         </motion.p>
@@ -115,7 +115,7 @@ export default function Hero() {
             Start Training
           </Link>
           <Link
-            href="/#athletes"
+            href="/athletes"
             className="font-body text-sm font-medium tracking-[0.25em] text-text-primary border border-border-subtle hover:border-text-secondary px-8 py-3.5 uppercase transition-colors duration-200"
           >
             Our Athletes
@@ -135,7 +135,7 @@ export default function Hero() {
           transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
           className="w-px h-10 bg-gradient-to-b from-gold/60 to-transparent origin-top"
         />
-        <span className="font-body text-[9px] font-medium tracking-[0.35em] text-text-secondary/60 uppercase">
+        <span className="font-body text-[9px] font-medium tracking-[0.35em] text-white uppercase">
           Scroll
         </span>
       </motion.div>
@@ -147,8 +147,8 @@ export default function Hero() {
         transition={{ delay: 1.2, duration: 0.6 }}
         className="absolute top-32 right-6 flex flex-col items-end gap-1"
       >
-        <span className="font-display text-[11px] tracking-[0.3em] text-text-secondary/40">EST</span>
-        <span className="font-display text-[22px] tracking-[0.15em] text-text-secondary/25">2012</span>
+        <span className="font-display text-[11px] tracking-[0.3em] text-white">EST</span>
+        <span className="font-display text-[22px] tracking-[0.15em] text-white">2012</span>
       </motion.div>
     </section>
   )
