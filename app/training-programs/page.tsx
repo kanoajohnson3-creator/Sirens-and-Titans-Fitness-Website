@@ -126,7 +126,7 @@ export default function TrainingProgramsPage() {
               {/* Right — photo */}
               <div className="relative min-h-[500px] overflow-hidden">
                 <Image
-                  src="/NFL%20Player.webp"
+                  src="/Clear%20Group%20training%201.webp"
                   alt="Elite Group Training at Sirens & Titans Fitness"
                   fill
                   loading="lazy"

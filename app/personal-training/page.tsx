@@ -36,7 +36,7 @@ export default function PersonalTrainingPage() {
               {/* Left — photo */}
               <div className="relative min-h-[500px] overflow-hidden">
                 <Image
-                  src="/Personal%20Training%20photo%203.webp"
+                  src="/Clear%20Personal%20training%20Photo.webp"
                   alt="Personal training at Sirens & Titans Fitness"
                   fill
                   loading="lazy"

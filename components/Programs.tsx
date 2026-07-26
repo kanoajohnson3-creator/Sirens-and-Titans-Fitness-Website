@@ -14,7 +14,7 @@ const programs = [
     detail: 'Small Groups',
     accent: 'gold',
     href: '/training-programs',
-    photos: ['/NFL%20Player.webp'] as string[],
+    photos: ['/Clear%20Group%20training%201.webp'] as string[],
   },
   {
     number: '02',
@@ -24,7 +24,7 @@ const programs = [
     detail: '1-on-1',
     accent: 'green',
     href: '/personal-training',
-    photos: ['/Personal%20Training%20Photo.webp'] as string[],
+    photos: ['/Clear%20Personal%20training%20Photo.webp'] as string[],
   },
   {
     number: '03',

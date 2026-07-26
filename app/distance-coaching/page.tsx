@@ -91,7 +91,7 @@ export default function DistanceCoachingPage() {
               {/* Right — photo */}
               <div className="relative min-h-[500px] overflow-hidden">
                 <Image
-                  src="/Jacques%20Misc%20Photo.webp"
+                  src="/Distance%20Coaching%20photo.webp"
                   alt="Jacques DeVore coaching"
                   fill
                   loading="lazy"
