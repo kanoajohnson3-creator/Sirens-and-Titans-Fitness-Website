@@ -41,17 +41,17 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
 
-        <Link href="/" className="text-white font-bold whitespace-nowrap shrink-0" style={{ fontSize: '11px' }}>
+        <Link href="/" className="text-white font-bold whitespace-nowrap shrink-0" style={{ fontSize: '14px' }}>
           S&T
         </Link>
 
-        <div className="flex items-center gap-0 bg-[#4A7C26] px-2 py-2">
+        <div className="flex items-center gap-0 bg-[#4A7C26] px-4 py-2">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-white font-medium px-1.5 hover:opacity-70 whitespace-nowrap"
-              style={{ fontSize: '10px' }}
+              className="text-white font-medium px-3 hover:opacity-70 whitespace-nowrap"
+              style={{ fontSize: '13px' }}
             >
               {link.label}
             </Link>
@@ -61,8 +61,8 @@ export default function Navigation() {
         <div className="flex items-center gap-2 shrink-0">
           <Link
             href="/contact"
-            className="bg-[#4A7C26] text-white font-medium px-2 py-2 whitespace-nowrap"
-            style={{ fontSize: '10px' }}
+            className="bg-[#4A7C26] text-white font-medium px-4 py-2 whitespace-nowrap"
+            style={{ fontSize: '13px' }}
           >
             START TRAINING
           </Link>
