@@ -164,13 +164,13 @@ const featuredAthletes: FeaturedAthlete[] = [
 ]
 
 const individualAthletes = [
+  { name: 'Giancarlo Stanton', credential: 'New York Yankees' },
   { name: 'Felix Sanchez', credential: '2x Olympic Gold Medalist 400m Hurdles' },
   { name: "Shaq O'Neal", credential: 'Los Angeles Lakers' },
   { name: 'Mark Madsen', credential: 'Los Angeles Lakers' },
   { name: 'Devean George', credential: 'Los Angeles Lakers' },
   { name: 'Rick Fox', credential: 'Los Angeles Lakers' },
   { name: 'Mitch Richmond', credential: 'Los Angeles Lakers' },
-  { name: 'Giancarlo Stanton', credential: 'New York Yankees' },
   { name: 'Ricky Nolasco', credential: 'Los Angeles Angels' },
   { name: 'A.J. Ramos', credential: 'New York Mets' },
   { name: 'Regan Upshaw', credential: 'Oakland Raiders' },
