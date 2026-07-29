@@ -63,7 +63,7 @@ export default function Hero() {
           className="flex items-center gap-4 mb-10"
         >
           <div className="w-10 h-px bg-gold" />
-          <span className="font-body text-[10px] font-medium tracking-[0.35em] text-gold uppercase">
+          <span className="font-body text-[10px] font-medium tracking-[0.35em] text-white uppercase">
             Los Angeles, CA &nbsp;·&nbsp; Appointment Only
           </span>
         </motion.div>
@@ -98,7 +98,7 @@ export default function Hero() {
           transition={{ duration: 0.65, delay: 0.5, ease: 'easeOut' }}
           className="font-body text-base md:text-lg font-light text-white max-w-xl mt-6 leading-relaxed tracking-wide"
         >
-          High end personal training in a group setting. Results-driven, science-based strength and conditioning for athletes and competitors at every level.
+          High end athletes sports performance and personal training in a group. Results-driven, science-based strength and conditioning for athletes and competitors at every level.
         </motion.p>
 
         {/* CTAs */}

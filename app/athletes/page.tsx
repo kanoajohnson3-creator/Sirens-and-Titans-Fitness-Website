@@ -116,13 +116,55 @@ const featuredAthletes: FeaturedAthlete[] = [
     flipped: false,
     image: '/Patrick_Murphy.webp',
   },
+  {
+    slug: 'david-baar',
+    badge: 'PROFESSIONAL CYCLIST',
+    name: 'DAVID BAAR',
+    sport: 'Professional Cyclist · Tour de Bintan',
+    story:
+      'One week ago I completed the 2018 edition of the Tour de Bintan. Jacques and I specifically targeted this race weekend as my first-half season highlight. Preparation began in October of last year. Without as much on-bike training as I planned I can only credit my performance to the efficiency and effectiveness of Jacques Maximum Overload training. With only two hours a week in the gym I was able to consistently work out with him which is key if you want to consistently improve.',
+    attribution: 'David Baar · Professional Cyclist',
+    flipped: false,
+    image: '/DavidBaar.webp',
+  },
+  {
+    slug: 'brad-williams',
+    badge: 'COMPETITIVE CYCLIST · JIU JITSU',
+    name: 'BRAD WILLIAMS',
+    sport: 'Competitive Cyclist · Brazilian Jiu Jitsu',
+    story:
+      'Sirens and Titans Fitness combine a focused and educated approach to fitness and training. Jacques explained the difference between strength and power and how he was going to build my strength turn that into power and then increase duration and intensity to allow me to hold it as long as possible. He takes meticulous notes of each workout which allows us to go back and see where I have made the biggest gains and how far I have come. All you weekend warriors this is the gym that is going to give you an edge on your competition.',
+    attribution: 'Brad Williams · Competitive Cyclist',
+    flipped: true,
+    image: '/BradWilliams.webp',
+  },
+  {
+    slug: 'david-iglewicz',
+    badge: 'COMPETITIVE CYCLIST · TRACK RACING',
+    name: 'DAVID IGLEWICZ',
+    sport: 'Competitive Cyclist · National Champion',
+    story:
+      'About two years ago I was reading a book on primal health written by Mark Sisson. There was a mention of a performance trainer that believed in these methods and trained elite athletes. I did an internet search and reached out to him. His name is Jacques Devore and I was in absolute shock that he responded to the email I sent.\n\nAfter talking to him I thought this could advance my cycling ability and increase my health and longevity. We started working on force production. Then we integrated the force and worked on power by doing explosive walking lunges. I noticed a huge improvement in being able to sustain a sprint. I always had a good jump but now I was able to hold that top end speed longer.\n\nIn October 2017 we switched from walking lunges to an inertial based machine that basically allows you to do a measured plyometric movement. This thing ate up my legs and totally depleted my neuromuscular system. Now I was able to hold my sustained power even longer and able to sprint again and again as needed in a points race on the track.\n\nHere I am writing this just winning at nationals in the points race and getting 2nd in the Scratch and second in the pursuit. I cannot thank you enough Jacques Devore.',
+    attribution: 'David Iglewicz DMD',
+    flipped: false,
+    image: '/David%20Igle.webp',
+  },
+  {
+    slug: 'cassius-marsh',
+    badge: 'NFL DEFENSIVE END',
+    name: 'CASSIUS MARSH',
+    sport: 'NFL Defensive End · San Francisco 49ers',
+    story:
+      'Cassius Marsh is a former NFL Defensive End who played for the San Francisco 49ers, Seattle Seahawks, New England Patriots, Chicago Bears, and Arizona Cardinals over his professional career. Cassius trained with Jacques and the Sirens and Titans team to maintain and elevate his performance at the highest level of professional football.',
+    attribution: null,
+    flipped: false,
+    image: '/Cassius%201.webp',
+    gallery: ['/Cassius%202.webp', '/Cassius%203.webp', '/Cassius%204.webp', '/Cassius%205.webp'],
+  },
 ]
 
 const individualAthletes = [
-  { name: 'Hunter McIntyre', credential: '2x HYROX World Champion' },
-  { name: 'Cassius Marsh', credential: 'Defensive End, San Francisco 49ers' },
   { name: 'Felix Sanchez', credential: '2x Olympic Gold Medalist 400m Hurdles' },
-  { name: 'David Zabriskie', credential: 'Professional Cyclist, 6x USA TT Champion' },
   { name: "Shaq O'Neal", credential: 'Los Angeles Lakers' },
   { name: 'Mark Madsen', credential: 'Los Angeles Lakers' },
   { name: 'Devean George', credential: 'Los Angeles Lakers' },
@@ -153,10 +195,7 @@ const individualAthletes = [
   { name: 'Jeff Miller', credential: 'Professional Tennis' },
   { name: 'Tra Holder', credential: 'Arizona State Basketball' },
   { name: 'Tahaan Goodman', credential: 'UCLA Football' },
-  { name: 'Trent Turner', credential: 'Loyola University Maryland Lacrosse' },
-  { name: 'Owen Gaffney', credential: 'Harvard University Lacrosse' },
   { name: 'Jack Shoemaker', credential: 'Villanova University Lacrosse' },
-  { name: 'Patrick Murphy', credential: 'Dartmouth College Soccer' },
   { name: 'Pete Griffith', credential: 'Northwestern University Golf' },
   { name: 'Matt Lurie', credential: 'Johns Hopkins Tennis' },
   { name: 'Andrew Planting', credential: 'Swimming' },
@@ -230,6 +269,9 @@ export default function AthletesPage() {
                 OF THEMSELVES IN THE PRESENT. MOST ATHLETES DON&rsquo;T REALIZE HOW GOOD THEY
                 COULD HAVE BEEN.&rdquo;
               </p>
+              <p className="font-body text-base text-[#4A7C26] font-medium mt-4">
+                — Jacques DeVore
+              </p>
             </blockquote>
           </div>
         </div>
@@ -266,15 +308,6 @@ export default function AthletesPage() {
                       style={{ objectPosition: athlete.imagePosition ?? 'center center' }}
                     />
                     <div className="absolute inset-0 bg-black/50" />
-                    {/* Badge */}
-                    <div className="absolute top-6 left-6">
-                      <span
-                        className="rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-sm px-3 py-1 font-medium font-body backdrop-blur-sm"
-                        style={{ letterSpacing: '0.1em' }}
-                      >
-                        {athlete.badge}
-                      </span>
-                    </div>
                   </div>
 
                   {/* Content area */}

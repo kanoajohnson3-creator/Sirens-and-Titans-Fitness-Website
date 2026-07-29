@@ -127,10 +127,10 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex flex-col gap-1">
-            <p className="font-body text-[10px] font-light text-text-secondary/30 tracking-[0.15em]">
+            <p className="font-body text-[10px] font-light text-white tracking-[0.15em]">
               © 2025 Sirens &amp; Titans Fitness. All rights reserved.
             </p>
-            <p className="font-body text-[10px] font-light text-text-secondary/20 tracking-[0.15em]">
+            <p className="font-body text-[10px] font-light text-white tracking-[0.15em]">
               Powered by Science. Driven by Results.
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function Footer() {
               <Link
                 key={item}
                 href="#"
-                className="font-body text-[9px] font-light text-text-secondary/25 hover:text-text-secondary/50 tracking-[0.15em] uppercase transition-colors duration-200"
+                className="font-body text-[9px] font-light text-white hover:text-white tracking-[0.15em] uppercase transition-colors duration-200"
               >
                 {item}
               </Link>

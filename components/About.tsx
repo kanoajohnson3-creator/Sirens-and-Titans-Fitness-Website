@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
+import Image from 'next/image'
 
 const credentials = [
   'CSCS',
@@ -117,17 +118,28 @@ export default function About() {
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="mt-10 pt-8 border-t border-border-subtle"
+              className="mt-10 pt-8 border-t border-border-subtle flex gap-6 items-start"
             >
-              <p className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase mb-2">
-                Co-Author
-              </p>
-              <p className="font-body text-base font-light text-white italic tracking-wide">
-                Maximum Overload for Cyclists
-              </p>
-              <p className="font-body text-[10px] font-light text-white tracking-wide mt-1">
-                Published by Rodale Press
-              </p>
+              <div className="flex-shrink-0">
+                <Image
+                  src="/MaximumOverloadBook.webp"
+                  alt="Maximum Overload for Cyclists book cover"
+                  width={200}
+                  height={280}
+                  className="object-contain"
+                />
+              </div>
+              <div>
+                <p className="font-body text-[10px] font-medium tracking-[0.25em] text-white uppercase mb-2">
+                  Co-Author
+                </p>
+                <p className="font-body text-base font-light text-white italic tracking-wide">
+                  Maximum Overload for Cyclists
+                </p>
+                <p className="font-body text-[10px] font-light text-white tracking-wide mt-1">
+                  Published by Rodale Press
+                </p>
+              </div>
             </motion.div>
           </motion.div>
         </div>

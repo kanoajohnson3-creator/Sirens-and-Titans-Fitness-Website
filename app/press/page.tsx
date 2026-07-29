@@ -12,16 +12,39 @@ export const metadata: Metadata = {
 
 type Entry = {
   publication: string
+  name?: string
+  badge?: string
   date?: string
   host?: string
   headline: string
   description?: string
-  href: string
+  href?: string
   image?: string
-  linkLabel: string
+  linkLabel?: string
+  links?: { label: string; href: string }[]
 }
 
 const pressArticles: Entry[] = [
+  {
+    publication: 'BICYCLING MAGAZINE',
+    name: 'DENISE MUELLER-KORENEK',
+    badge: 'CLIENT SUCCESS STORY',
+    headline:
+      'Client Denise Mueller-Korenek Breaks the World Record as the Fastest Person Ever on a Bicycle at 183.9 MPH',
+    description:
+      'Congratulations to our client Denise Mueller-Korenek who broke the world record as the fastest person ever on a bicycle. Denise trained with Jacques and the Sirens and Titans team as part of her preparation for this historic achievement.',
+    image: '/Denise.webp',
+    links: [
+      {
+        label: 'READ ARTICLE →',
+        href: 'https://www.bicycling.com/news/a23281242/denise-mueller-korenek-breaks-bicycle-speed-record/',
+      },
+      {
+        label: 'WATCH VIDEO →',
+        href: 'https://www.youtube.com/watch?v=CkyGSyjNHP0',
+      },
+    ],
+  },
   {
     publication: 'Bicycling Magazine',
     headline: 'Smash Your Limits With This New Strength Training Plan For Cyclists',
@@ -146,6 +169,85 @@ const podcasts: Entry[] = [
 ]
 
 function MediaEntry({ entry }: { entry: Entry }) {
+  const body = (
+    <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+      {/* Thumbnail — only when an image is provided */}
+      {entry.image && (
+        <div className="relative w-full sm:w-32 h-32 flex-shrink-0 overflow-hidden">
+          <Image
+            src={entry.image}
+            alt={entry.headline}
+            fill
+            loading="lazy"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      )}
+
+      {/* Publication — left */}
+      <div className="sm:w-56 flex-shrink-0">
+        <span className="font-display text-3xl text-[#4A7C26] leading-none block">
+          {entry.publication}
+        </span>
+        {entry.name && (
+          <span className="font-body text-sm font-medium text-white mt-2 block">
+            {entry.name}
+          </span>
+        )}
+        {(entry.date || entry.host) && (
+          <span className="font-body text-sm text-white mt-2 block">
+            {entry.date ?? `Host: ${entry.host}`}
+          </span>
+        )}
+      </div>
+
+      {/* Headline + description — center */}
+      <div className="flex-1 text-center sm:text-left">
+        {entry.badge && (
+          <span
+            className="inline-block rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-xs px-3 py-1 font-medium font-body mb-2"
+            style={{ letterSpacing: '0.1em' }}
+          >
+            {entry.badge}
+          </span>
+        )}
+        <h3 className="font-body text-lg font-medium text-white group-hover:text-[#4A7C26] transition-colors duration-200 block sm:mt-0">
+          {entry.headline}
+        </h3>
+        {entry.description && (
+          <p className="font-body text-base text-white mt-2">{entry.description}</p>
+        )}
+      </div>
+
+      {/* Link(s) — right */}
+      {entry.links ? (
+        <div className="flex flex-col gap-3 mt-4 sm:mt-0 flex-shrink-0">
+          {entry.links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body text-sm font-medium text-[#4A7C26]/70 hover:text-[#4A7C26] flex items-center gap-2 transition-all duration-200"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      ) : (
+        <span className="font-body text-sm font-medium text-[#4A7C26]/70 group-hover:text-[#4A7C26] flex items-center gap-2 transition-all duration-200 mt-4 sm:mt-0 flex-shrink-0">
+          {entry.linkLabel}
+        </span>
+      )}
+    </div>
+  )
+
+  if (entry.links) {
+    return (
+      <div className="block max-w-4xl mx-auto px-6 py-12 border-b border-[#1E1E1E]">{body}</div>
+    )
+  }
+
   return (
     <a
       href={entry.href}
@@ -153,47 +255,7 @@ function MediaEntry({ entry }: { entry: Entry }) {
       rel="noopener noreferrer"
       className="group block max-w-4xl mx-auto px-6 py-12 border-b border-[#1E1E1E]"
     >
-      <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-        {/* Thumbnail — only when an image is provided */}
-        {entry.image && (
-          <div className="relative w-full sm:w-32 h-32 flex-shrink-0 overflow-hidden">
-            <Image
-              src={entry.image}
-              alt={entry.headline}
-              fill
-              loading="lazy"
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-          </div>
-        )}
-
-        {/* Publication — left */}
-        <div className="sm:w-56 flex-shrink-0">
-          <span className="font-display text-3xl text-[#4A7C26] leading-none block">
-            {entry.publication}
-          </span>
-          {(entry.date || entry.host) && (
-            <span className="font-body text-sm text-white mt-2 block">
-              {entry.date ?? `Host: ${entry.host}`}
-            </span>
-          )}
-        </div>
-
-        {/* Headline + description — center */}
-        <div className="flex-1 text-center sm:text-left">
-          <h3 className="font-body text-lg font-medium text-white group-hover:text-[#4A7C26] transition-colors duration-200 mt-2 sm:mt-0">
-            {entry.headline}
-          </h3>
-          {entry.description && (
-            <p className="font-body text-base text-white mt-2">{entry.description}</p>
-          )}
-        </div>
-
-        {/* Link — right */}
-        <span className="font-body text-sm font-medium text-[#4A7C26]/70 group-hover:text-[#4A7C26] flex items-center gap-2 transition-all duration-200 mt-4 sm:mt-0 flex-shrink-0">
-          {entry.linkLabel}
-        </span>
-      </div>
+      {body}
     </a>
   )
 }

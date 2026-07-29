@@ -22,7 +22,7 @@ const credentials = [
 
 type Podcast = {
   show: string
-  host: string
+  host?: string
   topic: string
   label: string
   href: string
@@ -87,6 +87,54 @@ const podcasts: Podcast[] = [
     topic: 'The concept of power and sustainable power in athletes',
     label: 'LISTEN',
     href: 'https://ronmckeefery.podbean.com/e/igct-episode-196-jacques-devore-look-at-it-with-fresh-eyes/',
+  },
+  {
+    show: 'End of Three Fitness',
+    topic: 'Power and power training levels',
+    label: 'LISTEN',
+    href: 'http://www.endofthreefitness.com/power-power-training-levels-jacques-devore/',
+  },
+  {
+    show: 'ContinueFit / Strength Coach TV',
+    topic: 'A gym ahead of its time',
+    label: 'LISTEN',
+    href: 'https://continuefit.com/a-gym-ahead-of-its-time-episode-59-sirens-titans-fitness-strength-coach-tv/',
+  },
+  {
+    show: 'Endurance Ladies Podcast',
+    topic: 'Why you need to lift weights now',
+    label: 'LISTEN',
+    href: 'http://enduranceladies.com/27-why-you-need-to-lift-weights-now-with-coach-jacques-devore/',
+  },
+  {
+    show: 'Consummate Athlete Podcast',
+    topic: 'Strength for cyclists',
+    label: 'LISTEN',
+    href: 'https://consummateathlete.wordpress.com/2017/08/16/strength-for-cyclists-jacques-devore/',
+  },
+  {
+    show: '40+ Fitness Podcast',
+    topic: 'Weightlifting and training for power for athletes 40 and above',
+    label: 'LISTEN',
+    href: 'https://www.stitcher.com/podcast/40-fitness-podcast/e/50731127',
+  },
+  {
+    show: 'The Mystery Tin Podcast',
+    topic: 'The state of fitness today',
+    label: 'LISTEN',
+    href: 'https://themtpn.com/2015/11/09/202-jacques-devore/',
+  },
+  {
+    show: 'Red Kite Prayer - The Paceline Podcast',
+    topic: 'All things competitive cycling',
+    label: 'LISTEN',
+    href: 'http://redkiteprayer.com/2017/06/the-paceline-podcast-73/',
+  },
+  {
+    show: 'Scientific Triathlon Podcast',
+    topic: 'Fitness and training for triathletes',
+    label: 'LISTEN',
+    href: 'https://scientifictriathlon.com/podcast/',
   },
 ]
 
@@ -197,13 +245,13 @@ export default function AboutPage() {
               {/* Book callout — two-column with cover image */}
               <div className="bg-[#141414] p-8">
                 <div className="flex gap-6 items-start">
-                  <div className="relative flex-shrink-0 w-[130px] h-[185px]">
+                  <div className="flex-shrink-0">
                     <Image
-                      src="/maximum+overload+book.webp"
-                      alt="Maximum Overload for Cyclists"
-                      fill
-                      loading="lazy"
-                      className="object-cover"
+                      src="/MaximumOverloadBook.webp"
+                      alt="Maximum Overload for Cyclists book cover"
+                      width={200}
+                      height={280}
+                      className="object-contain"
                     />
                   </div>
                   <div className="flex flex-col flex-1">
@@ -341,9 +389,11 @@ export default function AboutPage() {
                       >
                         {pod.show}
                       </p>
-                      <p className="font-body text-[10px] text-white mt-0.5">
-                        Host: {pod.host}
-                      </p>
+                      {pod.host && (
+                        <p className="font-body text-[10px] text-white mt-0.5">
+                          Host: {pod.host}
+                        </p>
+                      )}
                     </div>
                     <p className="font-body text-base text-white leading-snug">{pod.topic}</p>
                     <a

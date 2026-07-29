@@ -11,51 +11,46 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Jason D.',
-    detail: 'Tennis · Rafa Nadal Academy',
-    quote:
-      'Jacques spent months personalizing my workouts for an injury free trip to the Rafa Nadal Academy in Spain. His ability to listen and share his wealth of knowledge is remarkable. There is no substitute for a great fitness and strength coach.',
-    image: '/JasonRafa.webp',
-  },
-  {
-    name: 'Patrick Murphy',
-    detail: 'Dartmouth Soccer',
-    quote:
-      'After working with Jacques for 2 to 3 months I am the healthiest I have been in over 3 years. He is a genius who has a knowledge of the body unlike anybody I have ever worked with. He truly cares about his clients.',
-    image: '/Patrick_Murphy.webp',
-  },
-  {
-    name: 'Katherine Wood',
-    detail: 'UCI Pro Mountain Bike Racer',
-    quote:
-      'I walked away from the US National Championship with a new threshold power 16% higher than where I was when we first began just six months earlier. I am proud to say the team at Sirens and Titans will continue to help me find and push new limits.',
-    image: '/Katherine3.webp',
-  },
-  {
-    name: 'Owen G.',
-    detail: 'Harvard Lacrosse',
-    quote:
-      'During my Freshman season I was able to start in every game. I felt stronger quicker and more balanced than ever before. Jacques works tirelessly to help his clients improve.',
-    image: '/Owen_G_Collage.webp',
-  },
-  {
-    name: 'Luca Russo',
-    detail: 'Pro Soccer · Italy',
-    quote:
-      'I went from a 235 pound hex bar deadlift to a 405 pound hex bar deadlift in one month. I also improved my 40 yard sprint from 4.65 to a low 4.5. Jacques brutal honesty has given me the confidence to achieve my goals.',
-    image: '/Luca+Picture+1.webp',
-  },
-  {
     name: 'Toyo S.',
-    detail: 'Golf',
+    detail: 'Golf Performance',
     quote:
-      'After three years the improvement in my golf game has been substantial. Driving distance improved from 240 to 265 yards. Iron distances, ball striking consistency and short game accuracy have all come around significantly.',
+      'After three years the improvement in my golf game has been substantial. Driving distance improved from 240 to 265 yards. Iron distances ball striking consistency and short game accuracy have all come around significantly.',
   },
   {
     name: 'Larry J.',
-    detail: 'Golf',
+    detail: 'Golf · Pain Elimination',
     quote:
-      'Since I started working with Sirens and Titans I am able to play pain free often multiple days in a row. This is the only gym where my wife never wants to miss a workout. If you are a golfer you owe it to yourself to check it out.',
+      'Since I started working with Sirens and Titans I am able to play pain free often multiple days in a row. This is the only gym where my wife never wants to miss a workout.',
+  },
+  {
+    name: 'Randy P.',
+    detail: 'Competitive Cyclist',
+    quote:
+      'The Sirens and Titans program has enabled me to recover power and endurance I thought I had lost ten years ago. I am making these gains with two intense thirty minute workouts a week. I honestly feel like I have rolled the clock back.',
+  },
+  {
+    name: 'Maggie O.',
+    detail: 'Body Recomposition · Busy Mom',
+    quote:
+      'The beauty of S&TF is that my kick ass core building muscle toning heart pumping workout is done in just half an hour and I achieve better results than running stairs or doing yoga for an hour.',
+  },
+  {
+    name: 'Paul H.',
+    detail: 'Cycling · Age 73',
+    quote:
+      'I won the 65 plus age group in my annual 20 mile race. I beat the cyclist who has won the last four years and he is 69 and I am 73. I came 6th overall out of 333 cyclists.',
+  },
+  {
+    name: 'Laura C.',
+    detail: 'Elite Runner · Triathlete',
+    quote:
+      'As an elite runner I think of myself as a highly conditioned athlete. After my first workout on the VersaClimber at S&TF I was humbled. This fitness center has seriously changed the way I train and look at fitness.',
+  },
+  {
+    name: 'Dan K.',
+    detail: 'Cycling · Pain Elimination',
+    quote:
+      'I was able to ski free of pain for the first time in 2 years. Towards the end of 3 months I noticed I was climbing stronger spinning with more power and running faster.',
   },
 ]
 

@@ -18,31 +18,6 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'David Baar',
-    detail: 'Professional Cyclist',
-    quote:
-      'One week ago I completed the 2018 edition of the Tour de Bintan. Jacques and I specifically targeted this race weekend as my first-half season highlight. Preparation began in October of last year. Without as much on-bike training as I planned I can only credit my performance to the efficiency and effectiveness of Jacques Maximum Overload training. With only two hours a week in the gym I was able to consistently work out with him which is key if you want to consistently improve.',
-  },
-  {
-    name: 'David Zabriskie',
-    detail: 'Professional Cyclist · 6x USA TT Champion',
-    quote:
-      'I was so lucky to have found Jacques. I have seen a lot of coaches during my career as a professional cyclist for 15 years. I am a six time United States Time Trial Champion, have raced the Tour de France seven times and participated in 13 Grand Tours. Jacques presented me with a unique method for training and an impressive understanding of the underlying physiology at play for both on and off the bike. My power improved dramatically and my ability to hold power up a climb increased substantially. He is a strength and conditioning coach that has a tremendous understanding of what an endurance athlete needs to succeed.',
-  },
-  {
-    name: 'Brad W.',
-    detail: 'Cyclist',
-    badge: 'CYCLIST · JIU JITSU',
-    quote:
-      'Sirens and Titans Fitness combine a focused and educated approach to fitness and training. Jacques explained the difference between strength and power and how he was going to build my strength turn that into power and then increase duration and intensity to allow me to hold it as long as possible. He takes meticulous notes of each workout which allows us to go back and see where I have made the biggest gains and how far I have come. All you weekend warriors this is the gym that is going to give you an edge on your competition.',
-  },
-  {
-    name: 'Jason D.',
-    detail: 'Tennis',
-    quote:
-      'As a young person I played competitive junior tennis. I recently spent a week playing tennis several hours a day at the Rafa Nadal Academy in Spain. This was something I could not have done a year ago. Jacques spent months ahead of time personalizing my workouts to help me reach my goal of an injury free trip of a lifetime. His ability to listen and encourage while sharing his wealth of knowledge is remarkable. He and his coaches make a great team. There is no substitute for hard work but also no substitute for a great fitness and strength coach.',
-  },
-  {
     name: 'David W.',
     detail: 'USATF Masters Runner',
     quote:
@@ -108,12 +83,6 @@ const testimonials: Testimonial[] = [
     detail: 'Distance Coaching',
     quote:
       'I have been working with Jacques DeVore for about 3 months now. He is very skilled and knows what it takes to reach whatever goal you have. I have a world speed record on a bike as my goal and my training in the gym is focused on exactly how to achieve my goal. He keeps in contact with me when I am not in the gym to see how my training and recovery is going. A true skilled professional trainer that will help you achieve whatever your goal is.',
-  },
-  {
-    name: 'David Iglewicz',
-    detail: 'Cyclist',
-    quote:
-      'After talking to Jacques I thought this could advance my cycling ability and increase my health and longevity. I noticed a huge improvement in being able to sustain a sprint. I always had a good jump but now I was able to hold that top end speed longer. Here I am writing this just winning at nationals in the points race and getting 2nd in the Scratch and second in the pursuit. I cannot thank you enough Jacques DeVore.',
   },
   {
     name: 'Sam M.',
@@ -251,30 +220,6 @@ const testimonials: Testimonial[] = [
     badge: 'CYCLING · AGE 73',
     quote:
       'I want to let you know that I won the 65 plus age group in my annual 20 mile race in Troy Ohio. I finally beat the cyclist who has won the classification the last four years and he is 69 and I am 73. I came in second to him the last two years. I beat him by 52 seconds. I came 6th place overall out of 333 cyclists. I firmly believe in incorporating your Maximum Overload principles I was able to achieve a 17.1 mph pace throughout the race.',
-  },
-  {
-    name: 'Owen G.',
-    detail: 'Harvard Lacrosse',
-    quote:
-      'During my Freshman season I was able to start in every game. I felt stronger quicker and more balanced than ever before. Jacques works tirelessly to help his clients improve.',
-  },
-  {
-    name: 'Patrick Murphy',
-    detail: 'Dartmouth College Soccer',
-    quote:
-      'After working with Jacques for 2 to 3 months I am the healthiest I have been in over 3 years. He is a genius who has a knowledge of the body unlike anybody I have ever worked with. He truly cares about his clients.',
-  },
-  {
-    name: 'Katherine Wood',
-    detail: 'UCI Pro Mountain Bike Racer',
-    quote:
-      'I walked away from the US National Championship with a new threshold power 16 percent higher than where I was when we first began just six months earlier. I am proud to say the team at Sirens and Titans will continue to help me find and push new limits.',
-  },
-  {
-    name: 'Luca Russo',
-    detail: 'Professional Soccer · Italy',
-    quote:
-      'I went from a 235 pound hex bar deadlift to a 405 pound hex bar deadlift in one month. I also improved my 40 yard sprint from 4.65 to a low 4.5. Jacques brutal honesty has given me the confidence to achieve my goals.',
   },
 ]
 
