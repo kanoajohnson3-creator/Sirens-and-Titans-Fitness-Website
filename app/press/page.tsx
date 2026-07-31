@@ -26,6 +26,20 @@ type Entry = {
 
 const pressArticles: Entry[] = [
   {
+    publication: 'LA Hotlist',
+    headline: 'Best Gym in Los Angeles',
+    href: 'http://la.cityvoter.com/best/gym/fitness/los-angeles',
+    linkLabel: 'READ ARTICLE →',
+  },
+  {
+    publication: 'Daily Mail',
+    headline: 'Jennifer Lopez and Alex Rodriguez Spotted Outside LA Fitness Center',
+    description: 'J-Lo and A-Rod spotted working out at Sirens and Titans Fitness.',
+    href: 'https://www.dailymail.co.uk/tvshowbiz/article-4953934/J-Lo-Rod-spotted-outside-LA-fitness-center.html',
+    image: '/A%20Rod%20and%20J%20Lo%20photo.webp',
+    linkLabel: 'READ ARTICLE →',
+  },
+  {
     publication: 'BICYCLING MAGAZINE',
     name: 'DENISE MUELLER-KORENEK',
     badge: 'CLIENT SUCCESS STORY',
@@ -76,12 +90,6 @@ const pressArticles: Entry[] = [
     linkLabel: 'READ ARTICLE →',
   },
   {
-    publication: 'LA Hotlist',
-    headline: 'Best Gym in Los Angeles',
-    href: 'http://la.cityvoter.com/best/gym/fitness/los-angeles',
-    linkLabel: 'READ ARTICLE →',
-  },
-  {
     publication: 'VoyageLA',
     date: 'October 2021',
     headline: 'Exploring Life and Business with Jacques DeVore of Sirens and Titans Fitness',
@@ -103,16 +111,22 @@ const pressArticles: Entry[] = [
     linkLabel: 'READ ARTICLE →',
   },
   {
-    publication: 'Daily Mail',
-    headline: 'Jennifer Lopez and Alex Rodriguez Spotted Outside LA Fitness Center',
-    description: 'J-Lo and A-Rod spotted working out at Sirens and Titans Fitness.',
-    href: 'https://www.dailymail.co.uk/tvshowbiz/article-4953934/J-Lo-Rod-spotted-outside-LA-fitness-center.html',
-    image: '/A%20Rod%20and%20J%20Lo%20photo.webp',
+    publication: 'SIMPLIFASTER',
+    headline: 'Jacques DeVore — Expert Contributor on Sports Performance and Strength Training',
+    description:
+      'Published expert contributor writing on sports performance power training and strength and conditioning methodology.',
+    href: 'https://simplifaster.com/articles/author/jacquesdevore/',
     linkLabel: 'READ ARTICLE →',
   },
 ]
 
 const podcasts: Entry[] = [
+  {
+    publication: 'Strength Coach TV',
+    headline: 'Interview and Gym Tour',
+    href: 'https://www.youtube.com/watch?v=yYcGqFYGzkw',
+    linkLabel: 'WATCH →',
+  },
   {
     publication: 'LA Sober Sessions Podcast',
     host: 'Bill Raymond',
@@ -142,12 +156,6 @@ const podcasts: Entry[] = [
     linkLabel: 'LISTEN →',
   },
   {
-    publication: 'Strength Coach TV',
-    headline: 'Interview and Gym Tour',
-    href: 'https://www.youtube.com/watch?v=yYcGqFYGzkw',
-    linkLabel: 'WATCH →',
-  },
-  {
     publication: 'Primal Blueprint Podcast',
     host: 'Mark Sisson',
     headline: 'Maximum Overload for Cyclists',
@@ -165,6 +173,66 @@ const podcasts: Entry[] = [
     headline: 'The Concept of Power and Sustainable Power in Athletes',
     href: 'https://ronmckeefery.podbean.com/e/igct-episode-196-jacques-devore-look-at-it-with-fresh-eyes/',
     linkLabel: 'LISTEN →',
+  },
+  {
+    publication: 'That Triathlon Show — EP#62',
+    host: 'Mikael Eriksson',
+    headline:
+      'Maximum Overload — A Strength Based Cycling Program for Improved Speed and Endurance in Less Time. How pro cyclist David Zabriskie used the program to increase cycling power by 15% while losing body weight.',
+    href: 'https://scientifictriathlon.com/tts62/',
+    linkLabel: 'LISTEN →',
+  },
+  {
+    publication: 'Primal Blueprint Podcast — EP#197',
+    host: 'Mark Sisson',
+    headline:
+      'Maximum Overload for Cyclists — a radical strength based training program for increased cycling speed athletic longevity and overall health in half the training time.',
+    href: 'https://iheart.com/podcast/263-primal-blueprint-po-29747240/episode/197-jacques-devore-51529249/',
+    linkLabel: 'LISTEN →',
+  },
+  {
+    publication: 'Go Solo — Entrepreneurship Interview',
+    host: 'Go Solo / Collabs.io',
+    headline:
+      'Delivers Results in Fitness — Jacques discusses building Sirens and Titans and his philosophy on training with purpose versus just exercising.',
+    href: 'https://gosolo.subkit.com/sirens-and-titans-fitness/',
+    linkLabel: 'LISTEN →',
+  },
+  {
+    publication: 'SportsEdTV — Senior Contributor Feature',
+    host: 'SportsEdTV',
+    headline:
+      'Jacques DeVore on elite athlete training methodology and Maximum Sustainable Power development.',
+    href: 'https://sportsedtv.com/coach/jacques-devore',
+    linkLabel: 'READ →',
+  },
+  {
+    publication: 'Strength Coach Podcast — EP#212',
+    host: 'Anthony Renna / CONTINUEfit',
+    headline: 'Maximum Overload for Cyclists — deep dive on book methodology and application to athlete programming.',
+    href: 'https://www.youtube.com/watch?v=x8DWYpR8E_c',
+    linkLabel: 'WATCH →',
+  },
+  {
+    publication: 'End of Three Fitness — YouTube',
+    host: 'End of Three Fitness',
+    headline: 'The Power of POWER in Training at ALL Levels — why training power over strength benefits every sport.',
+    href: 'https://www.youtube.com/watch?v=a21CsGKNkKo',
+    linkLabel: 'WATCH →',
+  },
+  {
+    publication: '40+ Fitness Podcast — EP#265',
+    host: 'Allan Misner',
+    headline: 'Using Maximum Overload for Superior Performance — applying the methodology to athletes over 40.',
+    href: 'https://www.youtube.com/watch?v=oR28pjniMrE',
+    linkLabel: 'WATCH →',
+  },
+  {
+    publication: 'VersaPulley — Training Demo Video',
+    host: 'VersaPulley Channel',
+    headline: 'Jacques DeVore demonstrates leg squat variations on the VersaPulley for explosive power training.',
+    href: 'https://www.youtube.com/watch?v=Cu2T5eWI5So',
+    linkLabel: 'WATCH →',
   },
 ]
 

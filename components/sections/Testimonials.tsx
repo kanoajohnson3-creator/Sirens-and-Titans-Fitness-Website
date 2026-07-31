@@ -73,7 +73,7 @@ export default function Testimonials() {
           className="font-display text-white leading-none tracking-[0.03em]"
           style={{ fontSize: 'clamp(2.25rem, 6vw, 3.75rem)' }}
         >
-          IN THEIR OWN WORDS
+          INDIVIDUALS THAT WE TRAIN LIKE ATHLETES
         </h2>
       </div>
 

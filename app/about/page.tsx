@@ -136,6 +136,65 @@ const podcasts: Podcast[] = [
     label: 'LISTEN',
     href: 'https://scientifictriathlon.com/podcast/',
   },
+  {
+    show: 'That Triathlon Show — EP#62',
+    host: 'Mikael Eriksson',
+    topic:
+      'Maximum Overload — A Strength Based Cycling Program for Improved Speed and Endurance in Less Time. How pro cyclist David Zabriskie used the program to increase cycling power by 15% while losing body weight.',
+    label: 'LISTEN',
+    href: 'https://scientifictriathlon.com/tts62/',
+  },
+  {
+    show: 'Primal Blueprint Podcast — EP#197',
+    host: 'Mark Sisson',
+    topic:
+      'Maximum Overload for Cyclists — a radical strength based training program for increased cycling speed athletic longevity and overall health in half the training time.',
+    label: 'LISTEN',
+    href: 'https://iheart.com/podcast/263-primal-blueprint-po-29747240/episode/197-jacques-devore-51529249/',
+  },
+  {
+    show: 'Go Solo — Entrepreneurship Interview',
+    host: 'Go Solo / Collabs.io',
+    topic:
+      'Delivers Results in Fitness — Jacques discusses building Sirens and Titans and his philosophy on training with purpose versus just exercising.',
+    label: 'LISTEN',
+    href: 'https://gosolo.subkit.com/sirens-and-titans-fitness/',
+  },
+  {
+    show: 'SportsEdTV — Senior Contributor Feature',
+    host: 'SportsEdTV',
+    topic: 'Jacques DeVore on elite athlete training methodology and Maximum Sustainable Power development.',
+    label: 'READ',
+    href: 'https://sportsedtv.com/coach/jacques-devore',
+  },
+  {
+    show: 'Strength Coach Podcast — EP#212',
+    host: 'Anthony Renna / CONTINUEfit',
+    topic: 'Maximum Overload for Cyclists — deep dive on book methodology and application to athlete programming.',
+    label: 'WATCH',
+    href: 'https://www.youtube.com/watch?v=x8DWYpR8E_c',
+  },
+  {
+    show: 'End of Three Fitness — YouTube',
+    host: 'End of Three Fitness',
+    topic: 'The Power of POWER in Training at ALL Levels — why training power over strength benefits every sport.',
+    label: 'WATCH',
+    href: 'https://www.youtube.com/watch?v=a21CsGKNkKo',
+  },
+  {
+    show: '40+ Fitness Podcast — EP#265',
+    host: 'Allan Misner',
+    topic: 'Using Maximum Overload for Superior Performance — applying the methodology to athletes over 40.',
+    label: 'WATCH',
+    href: 'https://www.youtube.com/watch?v=oR28pjniMrE',
+  },
+  {
+    show: 'VersaPulley — Training Demo Video',
+    host: 'VersaPulley Channel',
+    topic: 'Jacques DeVore demonstrates leg squat variations on the VersaPulley for explosive power training.',
+    label: 'WATCH',
+    href: 'https://www.youtube.com/watch?v=Cu2T5eWI5So',
+  },
 ]
 
 export default function AboutPage() {
