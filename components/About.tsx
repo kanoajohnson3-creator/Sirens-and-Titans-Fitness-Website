@@ -81,7 +81,7 @@ export default function About() {
               JACQUES DeVORE
             </h3>
             <p className="font-body text-base font-light text-white leading-relaxed tracking-wide">
-              20+ years as a Certified Strength and Conditioning Specialist. Jacques founded Titan Sports
+              30+ years as a Certified Strength and Conditioning Specialist. Jacques founded Titan Sports
               Performance in Santa Barbara before opening Sirens and Titans in Los Angeles. He coauthored{' '}
               <em>Maximum Overload for Cyclists</em> published by Rodale Press, holds the unofficial
               VersaClimber world mile record, and has trained athletes from D1 programs to professional

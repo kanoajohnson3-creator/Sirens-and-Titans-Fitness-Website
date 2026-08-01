@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const stats = [
-  { value: '20+', label: 'Years Coaching', small: false },
+  { value: '30+', label: 'Years Coaching', small: false },
   { value: '100+', label: 'Athletes Trained', small: false },
   { value: 'D1 · PRO · OLYMPIC', label: 'Athlete Levels', small: true },
   { value: '#1', label: 'VersaClimber World Record', small: false },

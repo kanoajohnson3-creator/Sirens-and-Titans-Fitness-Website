@@ -8,7 +8,7 @@ import SectionLabel from '@/components/ui/SectionLabel'
 export const metadata: Metadata = {
   title: 'Jacques DeVore | Sirens & Titans Fitness',
   description:
-    'CSCS certified strength coach with 20+ years experience. Founder of Sirens & Titans Fitness, West Los Angeles.',
+    'CSCS certified strength coach with 30+ years experience. Founder of Sirens & Titans Fitness, West Los Angeles.',
 }
 
 const credentials = [

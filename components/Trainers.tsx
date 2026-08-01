@@ -9,7 +9,7 @@ const coaches = [
     name: 'JACQUES DeVORE',
     role: 'FOUNDER & HEAD COACH',
     credential: 'CSCS',
-    detail: '20+ years coaching elite and professional athletes. Founder of Sirens & Titans Fitness.',
+    detail: '30+ years coaching elite and professional athletes. Founder of Sirens & Titans Fitness.',
     gradient: 'from-[#1c1a10] via-[#14120a] to-[#0c0b06]',
     accent: 'gold',
     image: '/Jacques%20headshot.webp',

@@ -5,8 +5,8 @@ import { motion, useInView, animate } from 'framer-motion'
 
 const stats = [
   {
-    display: '20+',
-    numeric: 20,
+    display: '30+',
+    numeric: 30,
     prefix: '',
     suffix: '+',
     label: 'Years Coaching',
