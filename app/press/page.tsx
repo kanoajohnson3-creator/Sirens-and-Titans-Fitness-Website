@@ -238,10 +238,10 @@ const podcasts: Entry[] = [
 
 function MediaEntry({ entry }: { entry: Entry }) {
   const body = (
-    <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-      {/* Thumbnail — only when an image is provided */}
+    <div className="flex flex-col gap-6">
+      {/* Featured image — only when an image is provided */}
       {entry.image && (
-        <div className="relative w-full sm:w-32 h-32 flex-shrink-0 overflow-hidden">
+        <div className="relative w-full aspect-[16/9] overflow-hidden mb-6 rounded-sm">
           <Image
             src={entry.image}
             alt={entry.headline}
@@ -252,61 +252,63 @@ function MediaEntry({ entry }: { entry: Entry }) {
         </div>
       )}
 
-      {/* Publication — left */}
-      <div className="sm:w-56 flex-shrink-0">
-        <span className="font-display text-3xl text-[#4A7C26] leading-none block">
-          {entry.publication}
-        </span>
-        {entry.name && (
-          <span className="font-body text-sm font-medium text-white mt-2 block">
-            {entry.name}
+      <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+        {/* Publication — left */}
+        <div className="sm:w-56 flex-shrink-0">
+          <span className="font-display text-3xl font-bold text-white leading-none block">
+            {entry.publication}
           </span>
-        )}
-        {(entry.date || entry.host) && (
-          <span className="font-body text-sm text-white mt-2 block">
-            {entry.date ?? `Host: ${entry.host}`}
-          </span>
-        )}
-      </div>
-
-      {/* Headline + description — center */}
-      <div className="flex-1 text-center sm:text-left">
-        {entry.badge && (
-          <span
-            className="inline-block rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-xs px-3 py-1 font-medium font-body mb-2"
-            style={{ letterSpacing: '0.1em' }}
-          >
-            {entry.badge}
-          </span>
-        )}
-        <h3 className="font-body text-lg font-medium text-white group-hover:text-[#4A7C26] transition-colors duration-200 block sm:mt-0">
-          {entry.headline}
-        </h3>
-        {entry.description && (
-          <p className="font-body text-base text-white mt-2">{entry.description}</p>
-        )}
-      </div>
-
-      {/* Link(s) — right */}
-      {entry.links ? (
-        <div className="flex flex-col gap-3 mt-4 sm:mt-0 flex-shrink-0">
-          {entry.links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-body text-sm font-medium text-[#4A7C26]/70 hover:text-[#4A7C26] flex items-center gap-2 transition-all duration-200"
-            >
-              {link.label}
-            </a>
-          ))}
+          {entry.name && (
+            <span className="font-body text-sm font-bold text-white mt-2 block">
+              {entry.name}
+            </span>
+          )}
+          {(entry.date || entry.host) && (
+            <span className="font-body text-sm font-bold text-white mt-2 block">
+              {entry.date ?? `Host: ${entry.host}`}
+            </span>
+          )}
         </div>
-      ) : (
-        <span className="font-body text-sm font-medium text-[#4A7C26]/70 group-hover:text-[#4A7C26] flex items-center gap-2 transition-all duration-200 mt-4 sm:mt-0 flex-shrink-0">
-          {entry.linkLabel}
-        </span>
-      )}
+
+        {/* Headline + description — center */}
+        <div className="flex-1 text-center sm:text-left">
+          {entry.badge && (
+            <span
+              className="inline-block rounded-full bg-[#4A7C26]/20 text-[#4A7C26] text-xs px-3 py-1 font-medium font-body mb-2"
+              style={{ letterSpacing: '0.1em' }}
+            >
+              {entry.badge}
+            </span>
+          )}
+          <h3 className="font-body text-lg font-bold text-white transition-colors duration-200 block sm:mt-0">
+            {entry.headline}
+          </h3>
+          {entry.description && (
+            <p className="font-body text-base font-bold text-white mt-2">{entry.description}</p>
+          )}
+        </div>
+
+        {/* Link(s) — right */}
+        {entry.links ? (
+          <div className="flex flex-col gap-3 mt-4 sm:mt-0 flex-shrink-0">
+            {entry.links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block font-body text-sm font-medium bg-[#4A7C26] text-white px-4 py-2 hover:bg-[#3D6B1E] transition-colors duration-200"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        ) : (
+          <span className="inline-block font-body text-sm font-medium bg-[#4A7C26] text-white px-4 py-2 hover:bg-[#3D6B1E] transition-colors duration-200 mt-4 sm:mt-0 flex-shrink-0">
+            {entry.linkLabel}
+          </span>
+        )}
+      </div>
     </div>
   )
 

@@ -13,8 +13,8 @@ const stats = [
     isText: false,
   },
   {
-    display: '1000+',
-    numeric: 1000,
+    display: '10,000+',
+    numeric: 10000,
     prefix: '',
     suffix: '+',
     label: 'Individuals Trained',
@@ -77,7 +77,8 @@ function CountUp({
       duration: 2,
       ease: 'easeOut',
       onUpdate(latest) {
-        if (node) node.textContent = `${stat.prefix}${Math.round(latest)}${stat.suffix}`
+        if (node)
+          node.textContent = `${stat.prefix}${Math.round(latest).toLocaleString('en-US')}${stat.suffix}`
       },
     })
 

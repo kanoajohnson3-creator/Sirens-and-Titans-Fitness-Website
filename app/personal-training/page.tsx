@@ -83,12 +83,16 @@ export default function PersonalTrainingPage() {
                       <SectionLabel>Strength &amp; Conditioning</SectionLabel>
                       <div className="mt-4">
                         <span
-                          className="font-display text-[#4A7C26] leading-none"
-                          style={{ fontSize: 'clamp(2.5rem, 5vw, 3rem)' }}
+                          className="font-display text-2xl text-white leading-none block"
                         >
-                          $185
+                          CONTACT US FOR PRICING
                         </span>
-                        <span className="font-body text-base text-white ml-2">per hour</span>
+                        <Link
+                          href="/contact"
+                          className="font-body text-sm font-medium text-[#4A7C26] hover:text-[#3D6B1E] transition-colors duration-200 inline-block mt-2"
+                        >
+                          Book a consultation →
+                        </Link>
                       </div>
                       <p className="font-body text-base text-white leading-relaxed mt-3">
                         One on one personal training with one of our certified strength and
@@ -104,12 +108,16 @@ export default function PersonalTrainingPage() {
                       </span>
                       <div className="mt-4">
                         <span
-                          className="font-display text-[#4A7C26] leading-none"
-                          style={{ fontSize: 'clamp(2.5rem, 5vw, 3rem)' }}
+                          className="font-display text-2xl text-white leading-none block"
                         >
-                          $250
+                          CONTACT JACQUES FOR PRICING
                         </span>
-                        <span className="font-body text-base text-white ml-2">per hour</span>
+                        <Link
+                          href="/contact"
+                          className="font-body text-sm font-medium text-[#4A7C26] hover:text-[#3D6B1E] transition-colors duration-200 inline-block mt-2"
+                        >
+                          Book a consultation →
+                        </Link>
                       </div>
                       <p className="font-body text-base text-white leading-relaxed mt-3">
                         One on one personal training and nutritional coaching directly with Jacques
